@@ -1,6 +1,6 @@
 - 集合
 
-  - test
+  - [HashMap](collections/HashMap.md)
 
 - Java
 
