@@ -5,6 +5,6 @@
 
 > `Hello World`
 
-[GitHub](https://github.com/Sctwang)
+[GitHub](https://github.com/Sctwang/docsify)
 [Get Started](#introduction)
 
