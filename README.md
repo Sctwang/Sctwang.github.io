@@ -6,22 +6,6 @@
 
 
 
-
-
-<div align="center">
-    <p>
-        <a href="https://github.com/Sctwang/docsify" target="_blank">
-            <img src="https://badgen.net/github/stars/Sctwang/docsify" />
-        </a> 
-        <a href="https://github.com/Sctwang/docsify" target="_blank">
-            <img src="https://badgen.net/github/forks/Sctwang/docsify">
-        </a>
-    </p>
-</div>
-
-
-
-
 ## 背景
 
 在这之前使用 hexo + GitPages 搭建[个人博客](https://mortre.top/)，主题为 Next，写东西也比较方便。
