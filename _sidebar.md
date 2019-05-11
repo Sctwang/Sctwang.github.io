@@ -28,12 +28,12 @@
   - test
 
 - ✏️ LeetCode
-  - [leetcode_9](LeetCode/leetcode_9.md)
-  - [leetcode_104](LeetCode/leetcode_104.md)
-  - [leetcode_136](LeetCode/leetcode_136.md)
-  - [leetcode_169](LeetCode/leetcode_169.md)
-  - [leetcode_235](LeetCode/leetcode_235.md)
-  - [leetcode_237](LeetCode/leetcode_237.md)
-  - [leetcode_292](LeetCode/leetcode_292.md)
-  - [leetcode_344](LeetCode/leetcode_344.md)
-  - [leetcode_557](LeetCode/leetcode_777.md)
+  - [leetcode_9](leetcode/leetcode_9.md)
+  - [leetcode_104](leetcode/leetcode_104.md)
+  - [leetcode_136](leetcode/leetcode_136.md)
+  - [leetcode_169](leetcode/leetcode_169.md)
+  - [leetcode_235](leetcode/leetcode_235.md)
+  - [leetcode_237](leetcode/leetcode_237.md)
+  - [leetcode_292](leetcode/leetcode_292.md)
+  - [leetcode_344](leetcode/leetcode_344.md)
+  - [leetcode_557](leetcode/leetcode_777.md)
