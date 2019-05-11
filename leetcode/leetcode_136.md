@@ -1,5 +1,4 @@
 ```java
-package com.mortre.leetcode;
 /**
  * @Author: wyz
  * @Date: 2019/5/10 17:37
