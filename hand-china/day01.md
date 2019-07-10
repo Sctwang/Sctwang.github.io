@@ -54,6 +54,10 @@
 
 移除 docker 中的服务 `docker rm <对应服务名或唯一 ID>`
 
+删除镜像：`docker rmi -f [镜像 ID]`
+
+更多有关 Docker 使用教程：[阮一峰博客](http://www.ruanyifeng.com/blog/2018/02/docker-tutorial.html)
+
 ### JDK
 
 - 版本：`jdk-8u191-windows-x64`
