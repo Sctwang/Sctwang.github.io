@@ -30,9 +30,9 @@
 
 - 在 docker 中打开 mysql 服务：
 
-`docker run --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=1228 -d mysql:5.7`
+`docker run --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=xxxx -d mysql:5.7`
 
-其中 1228 为以 root 权限连接数据库时的密码，mysql 为对此服务起的别名。
+其中 xxxx为以 root 权限连接数据库时的密码，mysql 为对此服务起的别名。
 
 ####  Redis
 
