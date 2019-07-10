@@ -5,7 +5,6 @@
 <div align="center"><img src="https://i.loli.net/2019/05/09/5cd3c057cdee2.jpg" width="600px"/> </div>
 
 
-
 ## 背景
 
 在这之前使用 hexo + GitPages 搭建[个人博客](https://mortre.top/)，主题为 Next，写东西也比较方便。
@@ -53,9 +52,11 @@
   - [leetcode_237](leetcode/leetcode_237.md)
   - [leetcode_292](leetcode/leetcode_292.md)
   - [leetcode_344](leetcode/leetcode_344.md)
-  - [leetcode_557](leetcode/leetcode_777.md)
+  - [leetcode_557](leetcode/leetcode_577.md)
 
-
+- hand-china
+  - [day01](hand-china/day01.md)
+  - [day02](hand-china/day02.md)
 
 
 
