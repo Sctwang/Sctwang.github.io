@@ -26,7 +26,7 @@
 
 #### MySQL5.7
 
-- 方法：开启 `docker(systemctl start docker`） 之后，执行 `docker pull mysql:5.7`
+- 方法：开启 `docker(systemctl start docker)` 之后，执行 `docker pull mysql:5.7`
 
 - 在 docker 中打开 mysql 服务：
 
