@@ -22,7 +22,7 @@
 
 ### Docker
 
-- 方法：`yum -y install docker`
+- 方法：`yum install -y docker`
 
 #### MySQL5.7
 
