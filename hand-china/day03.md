@@ -181,11 +181,6 @@
    WHERE (hs.student_age = hh.max_age
       OR hs.student_age = hh.min_age)
   
-  and (hs.student_no, hs.student_name, hs.student_age) not in
-  (
-  
-  
-  )
   
   -- 6. 统计列出矩阵类型各分数段人数，横轴为分数段[100-85]、[85-70]、[70-60]、[<60]，纵轴为课程号、课程名称（提示使用case when句式）[12分]
   
@@ -268,5 +263,5 @@
              AND hc.course_name = 'J2SE')
      AND hc.course_name != 'J2SE';
   ~~~
-
+  
   
