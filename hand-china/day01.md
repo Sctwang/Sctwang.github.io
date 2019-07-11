@@ -24,6 +24,114 @@
 
 - 方法：`yum install -y docker`
 
+- 镜像加速器：来自于[阿里云教程](https://cr.console.aliyun.com/cn-hangzhou/instances/mirrors)，注册登录后，会有一个专属加速通道
+
+   - **CentOS 版**
+
+     #### 1.安装／升级 Docker 客户端
+
+     推荐安装 1.10.0 以上版本的 Docker 客户端，参考文档 [docker-ce](https://yq.aliyun.com/articles/110806)
+
+     #### 2. 配置镜像加速器
+
+     针对 Docker 客户端版本大于 1.10.0 的用户
+
+     您可以通过修改 daemon 配置文件 `/etc/docker/daemon.json` 来使用加速器
+
+     ```CentOS
+     sudo mkdir -p /etc/docker
+     sudo tee /etc/docker/daemon.json <<-'EOF'
+     {
+       "registry-mirrors": ["加速器地址"]
+     }
+     EOF
+     sudo systemctl daemon-reload
+     sudo systemctl restart docker
+     ```
+
+  - **Windows 版本**
+
+    #### 1. 安装／升级 Docker 客户端
+
+    对于 Windows 10 以下的用户，推荐使用 Docker Toolbox
+
+    Windows 安装文件：[下载地址](http://mirrors.aliyun.com/docker-toolbox/windows/docker-toolbox/)
+
+    对于 Windows 10 及以上的用户 推荐使用 Docker for Windows
+
+    Windows 安装文件：[下载地址](http://mirrors.aliyun.com/docker-toolbox/windows/docker-for-windows/)
+
+    #### 2. 配置镜像加速器
+
+    针对安装了 Docker Toolbox 的用户，您可以参考以下配置步骤：
+
+    创建一台安装有 Docker 环境的 Linux 虚拟机，指定机器名称为 default，同时配置 Docker 加速器地址。
+
+    ```CentOS
+    docker-machine create --engine-registry-mirror=https://加速器地址 -d virtualbox default
+    ```
+
+    查看机器的环境配置，并配置到本地，并通过 Docker 客户端访问 Docker 服务。
+
+    ```CentOS
+    docker-machine env defaulteval "$(docker-machine env default)"docker info
+    ```
+
+    针对安装了 Docker for Windows 的用户，您可以参考以下配置步骤：
+
+    在系统右下角托盘图标内右键菜单选择 Settings，打开配置窗口后左侧导航菜单选择 Docker Daemon。编辑窗口内的 JSON 串，填写下方加速器地址：
+
+    ```CentOS
+    {
+      "registry-mirrors": ["加速器地址"]
+    }
+    ```
+
+    编辑完成后点击 Apply 保存按钮，等待 Docker 重启并应用配置的镜像加速器。
+
+    #### 注意
+
+    Docker for Windows 和 Docker Toolbox 互不兼容，如果同时安装两者的话，需要使用 hyperv 的参数启动。
+
+    ```CentOS
+    docker-machine create --engine-registry-mirror=https://加速器地址 -d hyperv default
+    ```
+
+    Docker for Windows 有两种运行模式，一种运行 Windows 相关容器，一种运行传统的 Linux 容器。同一时间只能选择一种模式运行。
+
+    #### 3. 相关文档
+
+    [Docker 命令参考文档](https://docs.docker.com/engine/reference/commandline/cli/)
+
+    [Dockerfile 镜像构建参考文档](https://docs.docker.com/engine/reference/builder/)
+
+  - **Ubuntu 版**
+
+    #### 1. 安装／升级 Docker 客户端
+
+    推荐安装 1.10.0 以上版本的 Docker 客户端，参考文档 [docker-ce](https://yq.aliyun.com/articles/110806)
+
+    #### 2. 配置镜像加速器
+
+    针对 Docker 客户端版本大于 1.10.0 的用户
+
+    您可以通过修改 daemon 配置文件 `/etc/docker/daemon.json` 来使用加速器
+
+    ```CentOS
+    sudo mkdir -p /etc/docker
+    sudo tee /etc/docker/daemon.json <<-'EOF'
+    {
+      "registry-mirrors": ["加速器地址"]
+    }
+    EOF
+    sudo systemctl daemon-reload
+    sudo systemctl restart docker
+    ```
+
+    
+
+
+
 #### MySQL5.7
 
 - 方法：开启 `docker(systemctl start docker)` 之后，执行 `docker pull mysql:5.7`
