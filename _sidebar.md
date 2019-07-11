@@ -41,3 +41,4 @@
 - hand-china
   - [day01](hand-china/day01.md)
   - [day02](hand-china/day02.md)
+  - [day03](hand-china/day03.md)

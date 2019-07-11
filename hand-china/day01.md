@@ -70,14 +70,14 @@
 
   新建变量，变量名为 `JAVA_HOME` ，变量值为`C:\Program Files\Java\jdk1.8.0_191`
 
-### Navicat
+## Navicat
 
 - 版本：`navicat for mysql10.0.11`
 
-### IDEA
+## IDEA
 
 - 版本：`ideaIU-2018.1.4`
 
-### Git
+## Git
 
 - 版本：`Git-2.9.2-64-bit`
