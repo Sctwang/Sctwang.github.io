@@ -142,6 +142,13 @@
 
 其中 xxxx为以 root 权限连接数据库时的密码，mysql 为对此服务起的别名。
 
+- Dokcer 进入 MySQL 容器命令：
+
+  - `docker exec -it <mysql_name> bash` 
+
+  - `mysql -uroot -p`
+  - 输入 root 密码并回车
+
 ####  Redis
 
 - 方法：在 Docker 中执行 `docker pull redis`
