@@ -145,9 +145,24 @@
 - Dokcer 进入 MySQL 容器命令：
 
   - `docker exec -it <mysql_name> bash` 
-
-  - `mysql -uroot -p`
+- `mysql -uroot -p`
   - 输入 root 密码并回车
+  
+- Docker 容器中的 MySQL 镜像数据持久化：
+
+  - 问题：为做持久化前，机器重启之后，MySQL 镜像中的数据会出现丢失
+  - 解决：对镜像产生的数据进行持久化，保存到本地磁盘，每次重启不会发生丢失数据现象
+  - 方法：
+
+  ~~~sql
+  
+  
+  
+  
+  
+  ~~~
+
+  
 
 ####  Redis
 
