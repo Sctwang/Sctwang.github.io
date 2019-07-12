@@ -154,7 +154,7 @@ System.out.println(str.equals(str1));
 - 操作原理：Iterator 是专门的迭代输出接口，对元素进行判断，若有内容，则输出
 
 ~~~java
-public static void main(String[] args) {
+	public static void main(String[] args) {
         List<String> list = new ArrayList<String>();
         list.add("A");
         list.add("B");
@@ -209,7 +209,7 @@ delete() 源码：
 
 - 删除：deleteOnExit();
 
-~~~
+~~~java
  deleteOnExit() 源码：
  
  public void deleteOnExit() {
