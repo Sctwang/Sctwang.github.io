@@ -114,15 +114,14 @@
 
 - 答案
 
-  ~~~java
+  ~~~mysql
+  
   -- 1. 查询所有学生的成绩，没有成绩的也需要显示学生信息，显示（学号、姓名、课程名称、成绩）[6分]
   SELECT hs.student_no,hs.STUDENT_NAME,hc.COURSE_NAME,hsc.core
     FROM HAND_STUDENT hs 
    LEFT JOIN HAND_STUDENT_CORE hsc ON hs.STUDENT_NO =hsc.student_no
    LEFT JOIN HAND_COURSE hc on (hsc.COURSE_NO=hc.COURSE_NO)
-   
-  
-  
+      
   -- 2. 查询没学过“谌燕”老师课的同学，显示（学号、姓名）[10分]
   SELECT hs.student_no, hs.student_name
     FROM HAND_STUDENT hs
