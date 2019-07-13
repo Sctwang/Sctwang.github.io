@@ -1,5 +1,7 @@
 # 配置环境
 
+
+
 ## Maven
 
 - 版本：3.5.0
@@ -146,6 +148,7 @@
 
   - `docker exec -it <mysql_name> bash` 
 - `mysql -uroot -p`
+  
   - 输入 root 密码并回车
   
 - Docker 容器中的 MySQL 镜像数据持久化：
@@ -211,3 +214,15 @@
 ## Git
 
 - 版本：`Git-2.9.2-64-bit`
+- 
+
+```java
+通过 git log 查看 hand-china 提交的时间
+
+commit a07765010d411b641bece4da7814df031b56c78b
+Author: Sctwang <1286185556@qq.com>
+Date:   Wed Jul 10 13:32:50 2019 +0800
+
+    Update hand-china
+```
+
