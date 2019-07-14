@@ -49,3 +49,30 @@
 
 - [阿里云教程](https://help.aliyun.com/document_detail/53045.html?spm=a2c4g.11186623.2.19.37f61144Im19MH#concept-53045-zh)
 - [创建AccessKey](https://help.aliyun.com/document_detail/53045.html?spm=a2c4g.11186623.2.19.37f61144Im19MH#concept-53045-zh)
+
+### 图床工具 PicGo
+
+- 安装包[下载链接](https://github.com/Molunerfinn/PicGo/releases)
+
+- 云栖社区也进行了介绍：https://yq.aliyun.com/articles/609826
+
+- 此软件可以配置多种图床
+
+  - 七牛图床
+  - 微博图床
+  - 阿里云 OSS
+  - SM.MS
+  - 腾讯云 COS
+  - 又拍云图床
+  - Imgur 图床
+
+- 阿里云 OSS 图床配置记录：
+
+  > ![阿里云OSS设置](https://mortre-picgo.oss-cn-beijing.aliyuncs.com/20190714233635.png)
+
+- KeyId 和 KeySecret 需要进行设置，[链接](https://usercenter.console.aliyun.com/#/manage/ak)
+
+![设置KeyId和KeySecret](https://mortre-picgo.oss-cn-beijing.aliyuncs.com/20190714234054.png)
+
+- 存储空间：新建一个 Bucket，建议权限为公共读
+- 存储区域：根据自己的服务器和[访问域名和数据中心](https://www.alibabacloud.com/help/zh/doc-detail/31837.htm?spm=a2c63.p38356.a3.3.179112f0PBtYui)进行确认
