@@ -72,7 +72,10 @@
 
 - KeyId 和 KeySecret 需要进行设置，[链接](https://usercenter.console.aliyun.com/#/manage/ak)
 
-![设置KeyId和KeySecret](https://mortre-picgo.oss-cn-beijing.aliyuncs.com/20190714234054.png)
+![设置KeyId和KeySecret](https://mortre-picgo.oss-cn-beijing.aliyuncs.com/20190714234833.png)
 
 - 存储空间：新建一个 Bucket，建议权限为公共读
+
 - 存储区域：根据自己的服务器和[访问域名和数据中心](https://www.alibabacloud.com/help/zh/doc-detail/31837.htm?spm=a2c63.p38356.a3.3.179112f0PBtYui)进行确认
+
+  
