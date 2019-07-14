@@ -19,21 +19,21 @@
 
   - 创建 Bucket
 
-  ![创建 Bucket](https://mortre-images.oss-cn-beijing.aliyuncs.com/OSS/20190714173033_Bucket.jpg?OSSAccessKeyId=LTAIOzOPc86iCZQ3&Expires=1563106706&Signature=GN2WWCzSyk3R6RikUacSentiV3A%3D)
+  ![创建 Bucket](https://mortre-images.oss-cn-beijing.aliyuncs.com/OSS/20190714173033_Bucket.jpg)
 
   - **注意：存储空间创建后其名称地域和存储类型无法修改。**
 
 - 上传文件
 
-  - ![oss_upload.png](https://mortre-images.oss-cn-beijing.aliyuncs.com/OSS/20190714173617_oss_upload.png?Expires=1563100617&OSSAccessKeyId=TMP.hWTvydxy3pNRymz4LUr4v46NTV6UxQ2YiGqWgHJPbM1BcnRaF2wDBe5yyHBd7L8gwMkSPUEu2bsSVLTmK5bUvwvCUVZCHw33rZWQUoTpUQ3LqpXYNZkzfu9yLkoQam.tmp&Signature=rgRd2GGGSaZnJk8ZocBm3eyUX60%3D)
+  - ![oss_upload.png](https://mortre-images.oss-cn-beijing.aliyuncs.com/OSS/20190714173617_oss_upload.png)
 
 - 下载文件
 
-  - ![oss_download.png](https://mortre-images.oss-cn-beijing.aliyuncs.com/OSS/20190714173829_oss_download.png?Expires=1563100757&OSSAccessKeyId=TMP.hWTvydxy3pNRymz4LUr4v46NTV6UxQ2YiGqWgHJPbM1BcnRaF2wDBe5yyHBd7L8gwMkSPUEu2bsSVLTmK5bUvwvCUVZCHw33rZWQUoTpUQ3LqpXYNZkzfu9yLkoQam.tmp&Signature=ttkbKrhsV9h9TdoakUaS3ACwK04%3D)
+  - ![oss_download.png](https://mortre-images.oss-cn-beijing.aliyuncs.com/OSS/20190714173829_oss_download.png)
 
 - 删除文件
 
-  - ![oss_delete.png](https://mortre-images.oss-cn-beijing.aliyuncs.com/OSS/20190714174018_oss_delete.png?Expires=1563100846&OSSAccessKeyId=TMP.hWTvydxy3pNRymz4LUr4v46NTV6UxQ2YiGqWgHJPbM1BcnRaF2wDBe5yyHBd7L8gwMkSPUEu2bsSVLTmK5bUvwvCUVZCHw33rZWQUoTpUQ3LqpXYNZkzfu9yLkoQam.tmp&Signature=e7wl6BLAFMs8ToCaDMZV10NqYsc%3D)
+  - ![oss_delete.png](https://mortre-images.oss-cn-beijing.aliyuncs.com/OSS/20190714174018_oss_delete.png)
 
 - 删除存储空间
 
