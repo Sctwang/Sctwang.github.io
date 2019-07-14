@@ -25,15 +25,15 @@
 
 - 上传文件
 
-  - ![oss_upload.png](https://mortre-images.oss-cn-beijing.aliyuncs.com/OSS/20190714173617_oss_upload.png)
+  ![oss_upload.png](https://mortre-images.oss-cn-beijing.aliyuncs.com/OSS/20190714173617_oss_upload.png)
 
 - 下载文件
 
-  - ![oss_download.png](https://mortre-images.oss-cn-beijing.aliyuncs.com/OSS/20190714173829_oss_download.png)
+  ![oss_download.png](https://mortre-images.oss-cn-beijing.aliyuncs.com/OSS/20190714173829_oss_download.png)
 
 - 删除文件
 
-  - ![oss_delete.png](https://mortre-images.oss-cn-beijing.aliyuncs.com/OSS/20190714174018_oss_delete.png)
+  ![oss_delete.png](https://mortre-images.oss-cn-beijing.aliyuncs.com/OSS/20190714174018_oss_delete.png)
 
 - 删除存储空间
 
