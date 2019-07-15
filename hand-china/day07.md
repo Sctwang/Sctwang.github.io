@@ -147,8 +147,6 @@ public class Exam02 {
 
 
 
-
-
 ## Git
 
 ### 合并分支
@@ -168,9 +166,21 @@ public class Exam02 {
 
 
 
+### Docker
 
+- 打标签 tag
+  - docker tag 起的名字 地址
+- 启动容器 docker start ID（后台启动）
 
+- docker-compose.yaml
 
+- 执行运行命令 ：docker-compose up -d
+- 执行停止命令 ：docker-compose down -d
+- 查看日志：docker logs ID
+
+同时启动多个容器：
+
+- docker-compose.yaml 里写多个容器的命令
 
 
 
