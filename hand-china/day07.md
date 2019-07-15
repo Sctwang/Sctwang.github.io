@@ -125,3 +125,56 @@ public class Exam02 {
 }
 ~~~
 
+
+
+## Maven
+
+
+
+- SNAPSHOT 快照
+
+- packaging 默认打的是 jar 包
+
+
+
+生命周期(重要的几个)：
+
+- 编译阶段compile：只编译，不打包
+- 测试阶段test：单元测试
+- 打包package
+- 安装install
+- 部署deploy
+
+
+
+
+
+## Git
+
+### 合并分支
+
+>  [参考链接](https://gitee.com/help/articles/4196#article-header2)
+
+- git checkout -b wyz    （创建 wyz 分支并切换到 wyz 分支）
+
+- 在 wyz 分支下进行操作，git add <对应文件>
+
+- git commit -m "合并分支测试"
+
+- 切换到主分支 git checkout master
+
+- 分支合并 git merge wyz
+- 提交到远程 git push
+
+
+
+
+
+
+
+
+
+
+
+
+
