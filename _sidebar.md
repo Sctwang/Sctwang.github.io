@@ -23,4 +23,5 @@
   - [day05](hand-china/day05.md)
   - [day06](hand-china/day06.md)
   - [day07](hand-china/day07.md)
+  - [next](hand-china/next.md)
 
