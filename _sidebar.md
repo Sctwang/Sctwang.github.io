@@ -23,8 +23,8 @@
   - [day05](hand-china/day05.md)
   - [day06](hand-china/day06.md)
   - [day07](hand-china/day07.md)
-  - [next](hand-china/next.md)
   - [day08](hand-china/day08.md)
   - [day09](hand-china/day09.md)
   - [day10](hand-china/day10.md)
+  - [next](hand-china/next.md)
 
