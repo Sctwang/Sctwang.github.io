@@ -9,9 +9,7 @@
   - 返回数据处理
 - MyBatis
 
-
-
-- JPA
+- 其中 JPA ：
 
 > JPA 是 Hibernate 的一个抽象
 
