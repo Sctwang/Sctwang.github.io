@@ -200,7 +200,9 @@ mybatis.mapper-locations MyBatis 			Mapper加载路径
 
 - [Linux 命令大全](https://www.runoob.com/linux/linux-command-manual.html)
 
-| **1、文件管理**                                              |                                                              |                                                              |                                                              |
+  1.文件管理
+
+|                                                              |                                                              |                                                              |                                                              |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | [cat](https://www.runoob.com/linux/linux-comm-cat.html)      | [chattr](https://www.runoob.com/linux/linux-comm-chattr.html) | [chgrp](https://www.runoob.com/linux/linux-comm-chgrp.html)  | [chmod](https://www.runoob.com/linux/linux-comm-chmod.html)  |
 | [chown](https://www.runoob.com/linux/linux-comm-chown.html)  | [cksum](https://www.runoob.com/linux/linux-comm-cksum.html)  | [cmp](https://www.runoob.com/linux/linux-comm-cmp.html)      | [diff](https://www.runoob.com/linux/linux-comm-diff.html)    |
