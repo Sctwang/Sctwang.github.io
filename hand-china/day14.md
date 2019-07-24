@@ -57,6 +57,8 @@
 - 消息驱动：SpringCloud Stream
   - 服务追踪：SpringCloud Sleuth
 
+
+
 ### SpringCLoud 网关
 
 1、网关应用场景：
@@ -80,18 +82,16 @@
   - 两者底层实现基本一致，Gateway 比 Zuul 稍微强大一点
   - 两者可以直接替换
 
+
+
 ### SpringCLoud 服务发现
 
-
-
 - SpringCloud Eureka
-
   - Eureka Client ：服务注册
   - Eureka Server：服务发现
-
 - SpringCloud Eureka & Consul
-
-  ![SpringCloud Eureka & Consul](https://mortre-picgo.oss-cn-beijing.aliyuncs.com/20190724100328.png)
+  - Consul：保证强一致性
+  - Eureka：保证高可用
 
 ### SpringCLoud 其他组件
 
