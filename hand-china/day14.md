@@ -93,6 +93,8 @@
   - Consul：保证强一致性
   - Eureka：保证高可用
 
+
+
 ### SpringCLoud 其他组件
 
 
