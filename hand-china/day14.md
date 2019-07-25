@@ -97,6 +97,14 @@
 
 ### SpringCLoud 其他组件
 
+- Bibbon：自定义 RestTemplate 请求
+- Feign：生命行 Http 请求
+- Hystrix：Http 请求熔断
+
+
+
+
+
 
 
 
