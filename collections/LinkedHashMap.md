@@ -1,4 +1,4 @@
-转载自：[crossoverjie](https://crossoverjie.top/JCSprout/#/collections/)
+转载自：[crossoverjie](https://crossoverjie.top/JCSprout/#/)
 
 
 
