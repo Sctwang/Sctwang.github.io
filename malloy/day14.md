@@ -1,6 +1,6 @@
 ## SpringCloud
 
-### SpringCLoud 微服务架构
+### SpringCloud 微服务架构
 
 - 集群
   - 高性能：通过多台计算机完成同一个工作，分担压力，提高效率
