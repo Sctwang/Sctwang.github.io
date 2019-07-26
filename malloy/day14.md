@@ -46,15 +46,14 @@
 - SpringCloud 常用组件
 
   - 服务处理：SpringCloud Eureka
-- 负载均衡：SpringCloud Ribbon
+  - 负载均衡：SpringCloud Ribbon
   - 熔断限流：SpringCloud Hystrix
-- 服务调用：SpringCloud Feign
+  - 服务调用：SpringCloud Feign
   - 网关服务：SpringCloud Zuul
-
     - 网关服务：Spring Cloud Gateway
-- 配置中心：SpringCloud Config
+  - 配置中心：SpringCloud Config
   - 消息总线：SpringCloud Bus
-- 消息驱动：SpringCloud Stream
+  - 消息驱动：SpringCloud Stream
   - 服务追踪：SpringCloud Sleuth
 
 
