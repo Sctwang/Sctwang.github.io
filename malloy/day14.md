@@ -102,4 +102,76 @@
 
 
 
+### eureka-server 服务注册中心
+
+
+- 依赖
+
+~~~java
+<dependency>
+    <groupId>org.springframework.cloud</groupId>
+    <artifactId>spring-cloud-starter-eureka-server</artifactId>
+</dependency>
+~~~
+
+
+- application.yml
+
+~~~java
+server:
+  port: 8000										# (表示服务端口为 8000)
+spring:
+  application:
+    name: eureka-server								# (表示服务注册中心的名字叫做 eureka-server)
+eureka:
+  client:
+    register-with-eureka: false						# (表示是否将服务注册到 Eureka 服务端)
+    fetch-registry: false							# (由于自身就是 Eureka 服务端，所以设置为 false)
+    service-url:
+      defaultZone: http://127.0.0.1:8000/eureka		# (指定 Eureka 服务端的地址，默认值为 http://localhost:8761/eureka)
+~~~
+
+- 启动类
+
+~~~java
+@EnableEurekaServer
+@SpringCloudApplication
+public class DemoApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(DemoApplication.class, args);
+    }
+}
+~~~
+
+
+
+
+
+### Feign
+
+> Spring Cloud Ribbon 和 Spring Cloud Hystrix 实现了客户端负载均衡和服务容错，而 Spring Cloud Feign 不但整合了这两者的功能，而且还提供了一种比 Ribbon 更简单的服务调用方式 ——— 声明式服务调用。
+
+
+
+- 依赖
+
+~~~java
+<dependency>
+    <groupId>org.springframework.cloud</groupId>
+    <artifactId>spring-cloud-starter-feign</artifactId>
+</dependency>
+~~~
+
+- 启动类
+
+~~~java
+@EnableDiscoveryClient
+@EnableFeignClients
+@SpringCloudApplication
+public class DemoApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(DemoApplication.class, args);
+    }
+}
+~~~
 
