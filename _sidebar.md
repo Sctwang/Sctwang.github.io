@@ -30,7 +30,6 @@
   - [day08](malloy/day08.md)
   - [day09](malloy/day09.md)
   - [day10](malloy/day10.md)
-  - [next](malloy/next.md)
   - [day11](malloy/day11.md)
   - [day12](malloy/day12.md)
   - [day13](malloy/day13.md)
