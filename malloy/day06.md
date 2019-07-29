@@ -3,7 +3,7 @@
 ### 搭建 OSS 图床
 
 - 时间：2019 年 07 月 14 日
-- 测试链接：[Picture.jpg](https://mortre-images.oss-cn-beijing.aliyuncs.com/737487.png?Expires=1563101273&OSSAccessKeyId=TMP.hWTvydxy3pNRymz4LUr4v46NTV6UxQ2YiGqWgHJPbM1BcnRaF2wDBe5yyHBd7L8gwMkSPUEu2bsSVLTmK5bUvwvCUVZCHw33rZWQUoTpUQ3LqpXYNZkzfu9yLkoQam.tmp&Signature=%2FUECAwz7hDXzEOFok5Po0vd%2B1j8%3D)
+- 测试链接：[Picture.jpg](https://mortre-picgo.oss-cn-beijing.aliyuncs.com/gagndllenbffkdbhgikakolmohfjmc.png)
 
 ### 步骤
 
