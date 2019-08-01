@@ -235,3 +235,30 @@ iMac | $1000
 
 ~~~
 
+
+
+
+
+### Docker 报错处理
+
+- 问题：CentOS7 环境下的 Docker 无法运行镜像，重启时会报错
+
+> Loaded: error (Reason: Bad message)
+
+![docker_bad_message](https://mortre-picgo.oss-cn-beijing.aliyuncs.com/20190801190036.png)
+
+- 解决 ：一直以为是自己在配置 docker 的时候，误删了配置文件里的代码。在网上找了一番资料之后，处理方法如下：
+
+  ~~~java
+  问题：docker 无法启动，原因有可能磁盘不够，或者没有解析到。
+  
+  解决：增加 vg 容量，重启机器试试
+  
+  不行就删除 /usr/lib/systemd/system/docker.service 里的 DOCKER_STORAGE_OPTIONS
+  
+  然后重启：
+  systemctl daemon-reload
+  systemctl restart docker.service 
+  ~~~
+
+  
