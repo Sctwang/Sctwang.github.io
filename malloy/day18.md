@@ -115,6 +115,8 @@ def bubbleSort(alist):
 
 
 
+### 书写方式：
+
 ~~~java
 ### 用掘金－Markdown 编辑器写文章
 
