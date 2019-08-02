@@ -26,8 +26,3 @@
 
 补充中...
 
-
-
-
-
-[![Stargazers over time](https://starchart.cc/Sctwang/docsify.svg)](https://starchart.cc/Sctwang/docsify)
