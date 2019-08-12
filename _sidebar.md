@@ -38,4 +38,7 @@
   - [day16](malloy/day16.md)
   - [day17](malloy/day17.md)
   - [day18](malloy/day18.md)
+  - [day19](malloy/day19.md)
+  - [day20](malloy/day20.md)
+  - [day21](malloy/day21.md)
 
