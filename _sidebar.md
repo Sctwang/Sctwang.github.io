@@ -41,4 +41,5 @@
   - [day19](malloy/day19.md)
   - [day20](malloy/day20.md)
   - [day21](malloy/day21.md)
+  - [day22](malloy/day22.md)
 
