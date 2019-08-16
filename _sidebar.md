@@ -1,6 +1,7 @@
 - 集合
 
-  - [HashMap](collections/HashMap.md)
+  - [HashMap](collections/HashMap0.md)
+  - [HashMap](collections/HashMap1.md)
   - [ArrayList/Vector](collections/ArrayList.md)
   - [LinkedList](collections/LinkedList.md)
   - [HashSet](collections/HashSet.md)
