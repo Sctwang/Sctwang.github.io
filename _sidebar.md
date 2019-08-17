@@ -9,7 +9,8 @@
 
 - Back
   - [队列](back/queue.md)
-
+- [集合](back/set.md)
+  
 - LeetCode
   - [leetcode_9](leetcode/leetcode_9.md)
   - [leetcode_104](leetcode/leetcode_104.md)
