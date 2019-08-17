@@ -7,7 +7,8 @@
   - [HashSet](collections/HashSet.md)
   - [LinkedHashMap](collections/LinkedHashMap.md)
 
-
+- Back
+  - [队列](back/queue.md)
 
 - LeetCode
   - [leetcode_9](leetcode/leetcode_9.md)
