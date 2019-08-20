@@ -179,10 +179,10 @@ mybatis.mapper-locations MyBatis 			Mapper加载路径
 ### Linux
 
 - 通过less命令打开文件，通过Shift+G到达文件底部，再通过?+关键字的方式来根据关键来搜索信息。
-- 通过grep的方式查关键字，具体用法是, grep 关键字 文件名，如果要两次在结果里查找的话，就用grep 关键字1 文件名 | 关键字2 --color。最后--color是高亮关键字。
+- 通过grep的方式查关键字，具体用法是, grep 关键字 文件名，如果要两次在结果里查找的话：
+  - 用 `grep 关键字1 文件名 | 关键字2 --color`。最后--color是高亮关键字。
 - 通过vi来编辑文件。
 - 通过chmod来设置文件的权限。
-
 - 查看日志 
   - less  /var/log/messages
   - Ctrl+F向前翻页
