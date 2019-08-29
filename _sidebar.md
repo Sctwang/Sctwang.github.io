@@ -6,11 +6,11 @@
   - [LinkedList](collections/LinkedList.md)
   - [HashSet](collections/HashSet.md)
   - [LinkedHashMap](collections/LinkedHashMap.md)
-
 - Back
   - [队列](back/queue.md)
   - [集合](back/set.md)
-  
+- Others
+  - [float / double](others/float_double.md)
 - LeetCode
   - [leetcode_9](leetcode/leetcode_9.md)
   - [leetcode_104](leetcode/leetcode_104.md)
@@ -21,7 +21,6 @@
   - [leetcode_292](leetcode/leetcode_292.md)
   - [leetcode_344](leetcode/leetcode_344.md)
   - [leetcode_557](leetcode/leetcode_577.md)
-
 - malloy
   - [day01](malloy/day01.md)
   - [day02](malloy/day02.md)
