@@ -3,14 +3,14 @@
 - 单精度：编程语言中一般为 `float`
   - 格式：1 位符号，8 位指数，23 位小数
   - 含义：表明单精度和双精度精确的范围不一样，单精度，也即 float，一般在计算机中存储占用 4 字节，也 32 位，有效位数为 7 位
-
-![float](https://mortre-picgo.oss-cn-beijing.aliyuncs.com/float.jpg)
-
+  
+  ![float](https://mortre-picgo.oss-cn-beijing.aliyuncs.com/float.jpg)
+  
 - 双精度：编程语言中一般为 `double`
   - 格式：1 位符号，11 位指数，52 位小数
   - 含义：双精度（double）在计算机中存储占用 8 字节，64 位，有效位数为 16 位
 
-![double](https://mortre-picgo.oss-cn-beijing.aliyuncs.com/double.jpg)
+  ![double](https://mortre-picgo.oss-cn-beijing.aliyuncs.com/double.jpg)
 
 
 
