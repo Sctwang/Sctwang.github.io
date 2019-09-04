@@ -2,7 +2,9 @@
 
 > [微信公众号文章](https://mp.weixin.qq.com/s?__biz=MzI4Njc5NjM1NQ==&mid=2247488481&idx=1&sn=af83dc6907ff0dead4dff0a105405f2f&chksm=ebd62ccddca1a5db20871cf88fa75ccdce5d1f3fd0ed288b3c104604c2234a5ae5602cf521f0&scene=21#wechat_redirect)
 >
-> 作者：SnailClimb 链接：https://juejin.im/post/5ce69379e51d455d877e0ca0来源：掘金著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+> 作者：SnailClimb 链接：https://juejin.im/post/5ce69379e51d455d877e0ca0
+>
+> 来源：掘金著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 
 1.核心注解 `@SpringBootApplication`
 
