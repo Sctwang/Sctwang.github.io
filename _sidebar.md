@@ -48,5 +48,6 @@
   - [day18 - Markdown](malloy/day18.md)
   - [day19 - Java](malloy/day19.md)
   - [day21 - React](malloy/day21.md)
-  - [day23-元注解](malloy/20190902.md)
+  - [day23 - 元注解](malloy/20190902.md)
+  - [day24 - 自定义注解](malloy/day24.md)
 
