@@ -19,7 +19,7 @@
 
 
 
-![img](https://user-gold-cdn.xitu.io/2017/4/16/907c7a8770167e166acdb00c86962563.jpg?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+![hashmap-structure](https://mortre-picgo.oss-cn-beijing.aliyuncs.com/hashmap-structures.jpg)
 
 
 
