@@ -20,7 +20,7 @@ Map 这样的 `Key Value` 在软件开发中是非常经典的结构，常用于
 
 
 
-![img](https://user-gold-cdn.xitu.io/2018/7/23/164c47f32e1066e8?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+![](https://mortre-picgo.oss-cn-beijing.aliyuncs.com/164c47f32e1066e8.jpg)
 
 
 
@@ -28,7 +28,7 @@ Map 这样的 `Key Value` 在软件开发中是非常经典的结构，常用于
 
 
 
-![img](https://user-gold-cdn.xitu.io/2018/7/23/164c47f32ea077f9?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+![](https://mortre-picgo.oss-cn-beijing.aliyuncs.com/164c47f32ea077f9.jpg)
 
 
 
@@ -82,7 +82,7 @@ transient Entry<K,V>[] table = (Entry<K,V>[]) EMPTY_TABLE;
 
 
 
-![img](https://user-gold-cdn.xitu.io/2018/7/23/164c47f32e783a41?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+![](https://mortre-picgo.oss-cn-beijing.aliyuncs.com/164c47f32e783a41.jpg)
 
 
 
@@ -205,11 +205,7 @@ Entry 是 HashMap 中的一个内部类，从他的成员变量很容易看出�
 
 1.8 HashMap 结构图：
 
-
-
-![img](data:image/svg+xml;utf8,<?xml version="1.0"?><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="773" height="437"></svg>)
-
-
+![](https://mortre-picgo.oss-cn-beijing.aliyuncs.com/164c47f32f9650ba.jpg)
 
 先来看看几个核心的成员变量：
 
@@ -258,7 +254,7 @@ Node 的核心组成其实也是和 1.7 中的 HashEntry 一样，存放的都�
 
 
 
-![img](data:image/svg+xml;utf8,<?xml version="1.0"?><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="935" height="776"></svg>)
+![](https://mortre-picgo.oss-cn-beijing.aliyuncs.com/164c47f32fae8f7e.jpg)
 
 
 
@@ -338,13 +334,13 @@ for (int i = 0; i < 1000; i++) {
 
 
 
-![img](data:image/svg+xml;utf8,<?xml version="1.0"?><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="830" height="666"></svg>)
+![](https://mortre-picgo.oss-cn-beijing.aliyuncs.com/164c47f3528b183f.jpg)
 
 
 
 
 
-![img](data:image/svg+xml;utf8,<?xml version="1.0"?><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="830" height="666"></svg>)
+![](https://mortre-picgo.oss-cn-beijing.aliyuncs.com/164c47f34fa2b159.jpg)
 
 
 
@@ -388,7 +384,7 @@ ConcurrentHashMap 同样也分为 1.7 、1.8 版，两者在实现上略有不�
 
 
 
-![img](data:image/svg+xml;utf8,<?xml version="1.0"?><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="500" height="255"></svg>)
+![](https://mortre-picgo.oss-cn-beijing.aliyuncs.com/164c47f35b08fddd.jpg)
 
 
 
@@ -433,7 +429,7 @@ Segment 是 ConcurrentHashMap 的一个内部类，主要的组成如下：
 
 
 
-![img](data:image/svg+xml;utf8,<?xml version="1.0"?><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="816" height="237"></svg>)
+![](https://mortre-picgo.oss-cn-beijing.aliyuncs.com/164c47f35e216684.jpg)
 
 
 
@@ -515,7 +511,7 @@ Segment 是 ConcurrentHashMap 的一个内部类，主要的组成如下：
 
 
 
-![img](data:image/svg+xml;utf8,<?xml version="1.0"?><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="955" height="549"></svg>)
+![](https://mortre-picgo.oss-cn-beijing.aliyuncs.com/164c47f362b612b1.jpg)
 
 
 
@@ -524,7 +520,7 @@ Segment 是 ConcurrentHashMap 的一个内部类，主要的组成如下：
 
 
 
-![img](data:image/svg+xml;utf8,<?xml version="1.0"?><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1004" height="771"></svg>)
+![](https://mortre-picgo.oss-cn-beijing.aliyuncs.com/164c47f3741b82c2.jpg)
 
 
 
@@ -578,7 +574,7 @@ ConcurrentHashMap 的 get 方法是非常高效的，**因为整个过程都不�
 
 
 
-![img](data:image/svg+xml;utf8,<?xml version="1.0"?><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="781" height="495"></svg>)
+![](https://mortre-picgo.oss-cn-beijing.aliyuncs.com/164c47f3756eb206.jpg)
 
 
 
@@ -588,9 +584,7 @@ ConcurrentHashMap 的 get 方法是非常高效的，**因为整个过程都不�
 
 
 
-![img](data:image/svg+xml;utf8,<?xml version="1.0"?><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="855" height="346"></svg>)
-
-
+![](https://mortre-picgo.oss-cn-beijing.aliyuncs.com/164c47f37fab0f0a.jpg)
 
 也将 1.7 中存放数据的 HashEntry 改为 Node，但作用都是相同的。
 
@@ -602,7 +596,7 @@ ConcurrentHashMap 的 get 方法是非常高效的，**因为整个过程都不�
 
 
 
-![img](https://user-gold-cdn.xitu.io/2018/7/23/164c47f3846eab8f?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+![](https://mortre-picgo.oss-cn-beijing.aliyuncs.com/164c47f3846eab8f.jpg)
 
 
 
@@ -617,7 +611,7 @@ ConcurrentHashMap 的 get 方法是非常高效的，**因为整个过程都不�
 
 
 
-![img](data:image/svg+xml;utf8,<?xml version="1.0"?><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="868" height="341"></svg>)
+![](https://mortre-picgo.oss-cn-beijing.aliyuncs.com/164c47f39e73c37d.jpg)
 
 
 
