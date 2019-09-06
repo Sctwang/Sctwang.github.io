@@ -1,7 +1,8 @@
-##将数组转换为List
+## 将数组转换为List
 
-###问题
+### 问题
 假设有数组
+
 ```java
 Element[] array = {new Element(1),new Element(2),new Element(3)};
 ```
@@ -11,7 +12,7 @@ Element[] array = {new Element(1),new Element(2),new Element(3)};
 
     `new ArrayList<Element>(Arrays.asList(array))`
 
-###回答2
+### 回答2
 
 Arrays.asList(array)或者Arrays.asList(new Element(1),new Element(2),new Element(3))
 
