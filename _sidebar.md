@@ -2,6 +2,7 @@
 
   - [HashMap](collections/HashMap0.md)
   - [HashMap](collections/HashMap1.md)
+  - [ConcurrentHashMap](collections/ConcurrentHashMap.md)
   - [ArrayList/Vector](collections/ArrayList.md)
   - [LinkedList](collections/LinkedList.md)
   - [HashSet](collections/HashSet.md)
