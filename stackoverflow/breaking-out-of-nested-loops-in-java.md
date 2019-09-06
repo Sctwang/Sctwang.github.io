@@ -1,21 +1,21 @@
 ## 从一个多层嵌套循环中直接跳出
 
 ### 问题
-Java中如何从一个多层嵌套循环中退出，例如下面，有两个循环，break只能退出一个for循环，不能直接跳过第二个for循环
+Java 中如何从一个多层嵌套循环中退出，例如下面，有两个循环，break 只能退出一个 for 循环，不能直接跳过第二个 for 循环
 
 ```java
 for (Type type : types) {  
     for (Type t : types2) {  
          if (some condition) {  
              // Do something and break...  
-             break; // 这样只退出了最里的for循环  
+             break; // 这样只退出了最里的 for 循环  
          }  
 }}  
 ```
 
 ### 回答
 
-可以用break+label的语法，例子如下
+可以用 break + label 的语法，例子如下
 ```java
 public class Test {  
   public static void main(String[] args) {  
@@ -34,7 +34,7 @@ public class Test {
 }  
 ```
 
-首先在for循环前加标签，如例子中的outerloop，然后在for循环内break label(如本例的outerloop),就会跳出该label指定的for循环。
+首先在 for 循环前加标签，如例子中的 outerloop，然后在 for 循环内 break label(如本例的 outerloop),就会跳出该 label 指定的 for 循环。
 
 [stackoverflow链接](
 http://stackoverflow.com/questions/886955/breaking-out-of-nested-loops-in-java)
