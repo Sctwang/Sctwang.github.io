@@ -4,7 +4,7 @@
 我在我的 Windows7 64 位的系统上安装 Android SDK 时，jdk-6u23-windows-x64.exe 已经安装上了，但是 Android SDK 的安装程序却因为找不到已安装的 JDK 无法继续下去。
 这个问题出现过吗？有没有办法解决呢？
 
-![](https://mortre-picgo.oss-cn-beijing.aliyuncs.com/0060lm7Tgw1f72ny3m6oaj30ds0a0gmi.jpg)
+​								![](https://mortre-picgo.oss-cn-beijing.aliyuncs.com/0060lm7Tgw1f72ny3m6oaj30ds0a0gmi.jpg)
 
 ### 回答1：
 当你看到这个提示（找不到 jdk）的时候按 Back（返回），然后再点 Next (下一步)。这个时候，它将会去寻找 JDK
