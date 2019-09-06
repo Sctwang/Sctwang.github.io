@@ -42,8 +42,6 @@ systemctl start docker
 docker search java
 ```
 
-![img](https://mmbiz.qpic.cn/mmbiz_png/CKvMdchsUwlTaMR6AI8jfpnz14uqicZEL76Un6KJfDwCG7ypekyM0XvlViaHiaTHfvHKuIcSdBBebCDbH9r0dkTYw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
-
 ### 下载镜像
 
 ```
@@ -55,8 +53,8 @@ docker pull java:8
 > 由于 docker search 命令只能查找出是否有该镜像，不能找到该镜像支持的版本，所以我们需要通过 docker hub 来搜索支持的版本。
 
 - 进入 docker hub 的官网，地址：https://hub.docker.com
-- 然后搜索需要的镜像：![img](https://mmbiz.qpic.cn/mmbiz_png/CKvMdchsUwlTaMR6AI8jfpnz14uqicZELPhiapbQbbTZtpLVTjEI1rw8SOVXnCEca9gicGenS9XhAtaGXicQuyLR9w/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
-- 查看镜像支持的版本：![img](https://mmbiz.qpic.cn/mmbiz_png/CKvMdchsUwlTaMR6AI8jfpnz14uqicZELH49DpLPW1CZcO23xLOdAUek1nrP7fo9GUAOdgFRkSvyJibibQOfkwaBg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+- 然后搜索需要的镜像
+- 查看镜像支持的版本
 - 进行镜像的下载操作：
 
 ```
@@ -68,8 +66,6 @@ docker pull nginx:1.17.0
 ```
 docker images
 ```
-
-![img](https://mmbiz.qpic.cn/mmbiz_png/CKvMdchsUwlTaMR6AI8jfpnz14uqicZEL8Xdsl4zGSQ1tQIbiaR7eAuRgMDJiaHictiabWqXJziba6v81G7zg0DWIwSA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
 ### 删除镜像
 
@@ -111,15 +107,11 @@ docker run -p 80:80 --name nginx -d nginx:1.17.0
 docker ps
 ```
 
-![img](https://mmbiz.qpic.cn/mmbiz_png/CKvMdchsUwlTaMR6AI8jfpnz14uqicZELX37FXwV479Eq2WnWu4UZJMMu0tGH9AwD5Hlg9YPq6oia1I5HE69wI6w/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
-
 - 列出所有容器
 
 ```
 docker ps -a
 ```
-
-![img](https://mmbiz.qpic.cn/mmbiz_png/CKvMdchsUwlTaMR6AI8jfpnz14uqicZELICldQWbuYSDaOh8Xe8eZcjajbbeXU2hG5XvOibibiclU8kzhLIhV9C2rg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
 ### 停止容器
 
@@ -159,8 +151,6 @@ docker inspect --format "{{.State.Pid}}" $ContainerName(或者$ContainerId)
 nsenter --target "$pid" --mount --uts --ipc --net --pid
 ```
 
-![img](data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==)
-
 ### 删除容器
 
 - 删除指定容器：
@@ -181,15 +171,11 @@ docker rm -f $(docker ps -a -q)
 docker logs $ContainerName(或者$ContainerId)
 ```
 
-![img](https://mmbiz.qpic.cn/mmbiz_png/CKvMdchsUwlTaMR6AI8jfpnz14uqicZELgp4kombRkuna2onTsHt5uRlLPMbP9GLteoAIN5oE0aoeNg5HPR6TGA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
-
 ### 查看容器的 IP 地址
 
 ```
 docker inspect --format '{{ .NetworkSettings.IPAddress }}' $ContainerName(或者$ContainerId)
 ```
-
-![img](https://mmbiz.qpic.cn/mmbiz_png/CKvMdchsUwlTaMR6AI8jfpnz14uqicZELow5MRkB2Dhg5tjl2o1NFfxOdmw89l2qDufNfWuIuWtic8nx2icicVc1yg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
 ### 同步宿主机时间到容器
 
@@ -205,15 +191,11 @@ docker cp /etc/localtime $ContainerName(或者$ContainerId):/etc/
 docker stats $ContainerName(或者$ContainerId)
 ```
 
-![img](https://mmbiz.qpic.cn/mmbiz_png/CKvMdchsUwlTaMR6AI8jfpnz14uqicZELFAe0m9OMc2YbBg9pVTWAdSQ7jRrjicwUaeeGJMjV5ZicyGLnYY6nmg3w/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
-
 - 查看所有容器情况：
 
 ```
 docker stats -a
 ```
-
-![img](https://mmbiz.qpic.cn/mmbiz_png/CKvMdchsUwlTaMR6AI8jfpnz14uqicZEL8mRHA4qYxLDx0nCDB1JAADxtZHRWRtYSibhQiak0qKej4rWPzaTG2gXA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
 ### 进入 Docker 容器内部的 bash
 
@@ -221,7 +203,7 @@ docker stats -a
 docker exec -it $ContainerName /bin/bash
 ```
 
-![img](data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==)
+
 
 ## 修改 Docker 镜像的存放位置
 
@@ -230,8 +212,6 @@ docker exec -it $ContainerName /bin/bash
 ```
 docker info | grep "Docker Root Dir"
 ```
-
-![img](data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==)
 
 - 关闭 Docker 服务：
 
@@ -250,7 +230,3 @@ mv /var/lib/docker /mydata/docker
 ```
 ln -s /mydata/docker /var/lib/docker
 ```
-
-![img](https://mmbiz.qpic.cn/mmbiz_png/CKvMdchsUwlTaMR6AI8jfpnz14uqicZELLhL59RZibZVSkPXGgRWDklmcqrWQ6kDKXPsQCM9icgAflr5yeNL21JqA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
-
-![img](https://mmbiz.qpic.cn/mmbiz_png/CKvMdchsUwlTaMR6AI8jfpnz14uqicZELDBozFH7FvlD10X74LQUbkc6oqKZicwloKKb3XIBwAFL1bBkxa13ic21A/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
