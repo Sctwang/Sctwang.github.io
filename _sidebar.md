@@ -11,12 +11,11 @@
   - [队列](back/queue.md)
   - [集合](back/set.md)
 - Others
-  - [float / double](others/float_double.md)
+  - [Float / Double](others/float_double.md)
+  - [Docker](others/docker.md)
   - [JConsole](others/jconsole.md)
   - [Spring](others/spring.md)
-  - [architect-awesome](others/architect-awesome.md)
-- Linux
-  - [docker](linux/docker.md)
+  - [Architect-awesome](others/architect-awesome.md)
 - StackOverflow
   - [android-sdk-installation-doesnt-find-jdk](stackoverflow/android-sdk-installation-doesnt-find-jdk.md)
   - [avoiding-null-statements-in-java](stackoverflow/avoiding-null-statements-in-java.md)
