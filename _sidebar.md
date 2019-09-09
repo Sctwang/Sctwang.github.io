@@ -1,4 +1,4 @@
-- 学习路线
+- Awesome
   - [Architect-awesome](others/architect-awesome.md)
 - 集合
   - [HashMap](collections/HashMap0.md)
