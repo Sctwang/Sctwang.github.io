@@ -20,6 +20,10 @@
   - [android-sdk-installation-doesnt-find-jdk](stackoverflow/android-sdk-installation-doesnt-find-jdk.md)
   - [avoiding-null-statements-in-java](stackoverflow/avoiding-null-statements-in-java.md)
   - [breaking-out-of-nested-loops-in-java](stackoverflow/breaking-out-of-nested-loops-in-java.md)
+  - [check-if-at-least-two-out-of-three-booleans-are-true](stackoverflow/check-if-at-least-two-out-of-three-booleans-are-true.md)
+  - [comparing-java-enum-members-or-equals](stackoverflow/comparing-java-enum-members-or-equals.md)
+  - [convert-a-string-to-an-enum-in-java](stackoverflow/convert-a-string-to-an-enum-in-java.md)
+  - [converting-string-to-int-in-java](stackoverflow/converting-string-to-int-in-java.md)
 - LeetCode
   - [leetcode_9](leetcode/leetcode_9.md)
   - [leetcode_104](leetcode/leetcode_104.md)

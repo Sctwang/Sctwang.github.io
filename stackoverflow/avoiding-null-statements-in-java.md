@@ -99,5 +99,5 @@ ParserFactory.getParser().findAction(someInput).doSomething();
 - Java8 或者 guava lib 中，提供了 Optional 类，这是一个元素容器，通过它来封装对象，可以减少判空。不过代码量还是不少。不爽。
 - 如果你想返回 null，请停下来想一想，这个地方是否更应该抛出一个异常
 
-[stackoverflow链接](
+[stackoverflow 链接](
 http://stackoverflow.com/questions/271526/avoiding-null-statements-in-java?page=2&tab=votes#tab-top)

@@ -1,4 +1,4 @@
-## 如何将String转换为enum
+## 如何将 String 转换为 enum
 
 ### 问题
 假设定义了如下的enum（枚举）：
@@ -8,14 +8,14 @@ public enum Blah {
     A, B, C, D
 }
 ```
-已知枚举对应的String值，希望得到对应的枚举值。例如，已知"A"，希望得到对应的枚举——Blah.A，应该怎么做？  
-Enum.valueOf()是否能实现以上目的，如果是，那我如何使用？
+已知枚举对应的 String 值，希望得到对应的枚举值。例如，已知 "A"，希望得到对应的枚举 —— Blah.A，应该怎么做？  
+Enum.valueOf() 是否能实现以上目的，如果是，那我如何使用？
 
 
 ### 答案
 是的，Blah.valueOf("A") 将会得到 Blah.A
 
-静态方法valueOf() 和 values() 不存在于源码中，而是在编译时创建，我们也可以在JavaDoc查看到它们，比如 [Dialog.ModalityTyp](http://docs.oracle.com/javase/7/docs/api/java/awt/Dialog.ModalityType.html) 就中出现这两个方法。
+静态方法 valueOf() 和 values() 不存在于源码中，而是在编译时创建，我们也可以在 JavaDoc 查看到它们，比如 [Dialog.ModalityTyp](http://docs.oracle.com/javase/7/docs/api/java/awt/Dialog.ModalityType.html) 就中出现这两个方法。
 
 ### 其他答案
 
@@ -47,4 +47,4 @@ public static MyEnum fromString(String name) {
 }
 ```
 
-stackoverflow链接：http://stackoverflow.com/questions/604424/convert-a-string-to-an-enum-in-java
+[stackoverflow 链接](http://stackoverflow.com/questions/604424/convert-a-string-to-an-enum-in-java)

@@ -36,5 +36,5 @@ public class Test {
 
 首先在 for 循环前加标签，如例子中的 outerloop，然后在 for 循环内 break label(如本例的 outerloop),就会跳出该 label 指定的 for 循环。
 
-[stackoverflow链接](
+[stackoverflow 链接](
 http://stackoverflow.com/questions/886955/breaking-out-of-nested-loops-in-java)

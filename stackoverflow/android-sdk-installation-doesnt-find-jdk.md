@@ -29,5 +29,5 @@
 	- JRE_HOME=C:/Program Files/Java/jre8
 	- Path=%JAVA_HOME%;C:...
 
-[stackoverflow链接](
+[stackoverflow 链接](
 http://stackoverflow.com/questions/4382178/android-sdk-installation-doesnt-find-jdk)
