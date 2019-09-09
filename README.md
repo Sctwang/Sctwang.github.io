@@ -3,18 +3,15 @@
 
 
 <div align="center"><img src="https://i.loli.net/2019/05/09/5cd3c057cdee2.jpg" width="600px"/> </div>
-## 背景
-
-在这之前使用 hexo + GitPages 搭建[个人博客](https://blog.mortre.top/)，主题为 Next，写东西也比较方便。
-
 
 
 ## 目录
 
 - 集合
-- LeetCode
-- malloy
+- Back
+- Others
 - StackOverflow
+- malloy
 
 
 
@@ -30,9 +27,9 @@
 
 作者：[crossoverJie](https://github.com/crossoverJie), 笔记：[JCSprout](https://crossoverjie.top/JCSprout/#/)
 
-[后端架构师技术图谱](https://github.com/xingshaocheng/architect-awesome)
+笔记：[后端架构师技术图谱](https://github.com/xingshaocheng/architect-awesome)
 
 ## 联系方式
 
-email: mortre@163.com
+Email: mortre@163.com
 
