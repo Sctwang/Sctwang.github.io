@@ -29,3 +29,10 @@
 作者：[snailclimb](https://github.com/Snailclimb), 笔记：[JavaGuide](https://snailclimb.top/JavaGuide/#/)
 
 作者：[crossoverJie](https://github.com/crossoverJie), 笔记：[JCSprout](https://crossoverjie.top/JCSprout/#/)
+
+[后端架构师技术图谱](https://github.com/xingshaocheng/architect-awesome)
+
+## 联系方式
+
+email: mortre@163.com
+

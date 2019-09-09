@@ -14,6 +14,7 @@
   - [float / double](others/float_double.md)
   - [JConsole](others/jconsole.md)
   - [Spring](others/spring.md)
+  - [architect-awesome](others/architect-awesome.md)
 - Linux
   - [docker](linux/docker.md)
 - StackOverflow
