@@ -1,4 +1,4 @@
-# JConsole 工具笔记
+# JConsole
 
 1、介绍：JConsole 是 Java 自带的一款性能分析工具
 
@@ -6,9 +6,10 @@
 
 3、官方使用教程：[Using jconsole](https://docs.oracle.com/javase/1.5.0/docs/guide/management/jconsole.html)
 
+------
 
 
-官方教程为全英文，以下为自己阅读过程中的笔记：
+官方文档为全英文，以下为自己阅读过程中的笔记（部分采用谷歌翻译）：
 
 `Jconsole` 是一个兼容 JMX（Java 管理扩展） 的监控工具，它使用 Java 虚拟机的广泛 JMX 工具来提供有关 Java 平台上运行的应用程序的性能和资源消耗的信息。
 
@@ -67,13 +68,11 @@
 #### *Local Tab* （本地选项卡）
 
 <div align=center><img src="https://mortre-picgo.oss-cn-beijing.aliyuncs.com/localtab.jpg"/></div>
-
 本地选项卡列出在本地系统上运行的所有 JVM，它们使用与 jconsole 相同的用户 ID 启动，以及它们的进程 ID 和类/参数信息。选择你想监控的应用，然后点击 Connection。
 
 #### *Remote Tab*（远程选项卡）
 
 <div align=center><img /src="https://mortre-picgo.oss-cn-beijing.aliyuncs.com/remotetab.jpg"/></div>
-
 要监控一个远程 JVM，输入：
 
 - 主机名字：运行 JVM 的机器名称。
@@ -87,7 +86,6 @@
 #### *Advanced Tab*（高级选项卡）
 
 <div align="center"><img src="https://mortre-picgo.oss-cn-beijing.aliyuncs.com/Advanced Tab.jpg"/></div>
-
 高级选项卡使你能够通过指定 JMX URL 连接 JMX 代理（MBean 服务），还有用户名称和密码。
 
 [javax.management.remote.JMXServiceURL](https://docs.oracle.com/javase/1.5.0/docs/api/javax/management/remote/JMXServiceURL.html) 的 API 文档中描述了 JMX URL 的语法。
@@ -113,7 +111,6 @@ jconsole 界面由 6 个选项卡组成：
 摘要选项卡显示有关线程使用情况，内存消耗和类加载的一些关键监视信息，以及有关JVM和操作系统的信息。
 
 <div align=center><img src="https://mortre-picgo.oss-cn-beijing.aliyuncs.com/summarytab.jpg" /></div>
-
 ### Summary（摘要）
 
 - **正常运行时间**： JVM 运行了多久
@@ -152,7 +149,6 @@ jconsole 界面由 6 个选项卡组成：
 内存选项卡提供有关内存消耗和内存池的信息。
 
 <div align=center><img src="https://mortre-picgo.oss-cn-beijing.aliyuncs.com/memtab.jpg" /></div>
-
 该图表显示了 JVM 的内存使用与时间，堆和非堆内存以及特定内存池的关系。可用的内存池取决于所使用的 JVM。对于 HotSpot JVM，池是：
 
 - Eden Space (heap): pool from which memory is initially allocated for most objects.
@@ -205,7 +201,6 @@ The HotSpot VM defines two generations: the **young generation** (sometimes call
 The default arrangement of generations looks something like this:
 
 <div align=center><img src="https://mortre-picgo.oss-cn-beijing.aliyuncs.com/generations.gif"/></div>
-
 As explained in the following documents, if the garbage collector has become a bottleneck, you can improve performance by customizing the generation sizes. Using jconsole, explore the sensitivity of your performance metric to the garbage collector parameters. For more information, see:
 
 - [Tuning Garbage collection with the 5.0 HotSpot VM](http://java.sun.com/docs/hotspot/gc/index.html)
@@ -215,7 +210,6 @@ As explained in the following documents, if the garbage collector has become a b
 The Threads tab provides information on thread use.
 
 <div align=center><img src="https://mortre-picgo.oss-cn-beijing.aliyuncs.com/threadtab.jpg"/></div>
-
 The graph plots the number of classes loaded versus time:
 
 - Red line is the total number of classes loaded (including those subsequently unloaded).
@@ -228,7 +222,6 @@ The Details section at the bottom of the tab displays the total number of classe
 The MBean tab displays information on all the MBeans registered with the platform MBean server.
 
 <div align=center><img src="https://mortre-picgo.oss-cn-beijing.aliyuncs.com/20190909142055.png"/></div>
-
 The tree on the left shows all the MBeans, organized according to their objectNames. When you select an MBean in the tree, its attributes, operations, notifications and other information is displayed on the right.
 
 You can set the value of attributes, if they are writeable (the value will be displayed in blue).  You can also invoke operations displayed in the Operations tab.
@@ -238,13 +231,11 @@ You can set the value of attributes, if they are writeable (the value will be di
 You can display a chart of an attribute's value versus time by double-clicking on the attribute value.  For example, if you click on the value of the CollectionTime property of java.lang.GarbageCollector.Copy MBean, you will see a chart that looks something like this:
 
 <div align=center><img src="https://mortre-picgo.oss-cn-beijing.aliyuncs.com/20190909142141.png"/></div>
-
 ## Viewing VM Information(查看 VM 信息)
 
 The VM tab provides information on the JVM.
 
 <div align=center><img src="https://mortre-picgo.oss-cn-beijing.aliyuncs.com/20190909142226.png"/></div>
-
 The information includes:
 
 - **Uptime**: Total amount of time since the JVM was started.
