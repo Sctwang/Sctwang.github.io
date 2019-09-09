@@ -1,8 +1,7 @@
 
 
 <h1><font face="verdana">Hello World</font></h1>
-
-Administer
+「One·for·All」
 
 [GitHub](https://github.com/Sctwang/docsify)
 [Get Started](#introduction)
