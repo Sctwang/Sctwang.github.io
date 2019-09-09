@@ -66,13 +66,13 @@
 
 #### *Local Tab* （本地选项卡）
 
-<div align="center">![](https://mortre-picgo.oss-cn-beijing.aliyuncs.com/localtab.jpg)</div>
+<div align=center><img src="https://mortre-picgo.oss-cn-beijing.aliyuncs.com/localtab.jpg"/></div>
 
 本地选项卡列出在本地系统上运行的所有 JVM，它们使用与 jconsole 相同的用户 ID 启动，以及它们的进程 ID 和类/参数信息。选择你想监控的应用，然后点击 Connection。
 
-#### *Remote Tab*（远程选项卡）
+#### *Remote Tab*（远程选项卡
 
-<div align="center">![](https://mortre-picgo.oss-cn-beijing.aliyuncs.com/remotetab.jpg)</div>
+<div align=center><img /src="https://mortre-picgo.oss-cn-beijing.aliyuncs.com/remotetab.jpg"/></div>
 
 要监控一个远程 JVM，输入：
 
@@ -86,7 +86,7 @@
 
 #### *Advanced Tab*（高级选项卡）
 
-<div align="center">![](https://mortre-picgo.oss-cn-beijing.aliyuncs.com/Advanced Tab.jpg)</div>
+<div align="center"><img src="https://mortre-picgo.oss-cn-beijing.aliyuncs.com/Advanced Tab.jpg"/></div>
 
 高级选项卡使你能够通过指定 JMX URL 连接 JMX 代理（MBean 服务），还有用户名称和密码。
 
@@ -113,7 +113,7 @@ jconsole 界面由 6 个选项卡组成：
 
 摘要选项卡显示有关线程使用情况，内存消耗和类加载的一些关键监视信息，以及有关JVM和操作系统的信息。
 
-![](https://mortre-picgo.oss-cn-beijing.aliyuncs.com/summarytab.jpg)
+<div align=center><img src="https://mortre-picgo.oss-cn-beijing.aliyuncs.com/summarytab.jpg" /></div>
 
 ### Summary
 
@@ -152,4 +152,4 @@ jconsole 界面由 6 个选项卡组成：
 
 The Memory tab provides information on memory consumption and memory pools.
 
-![](https://mortre-picgo.oss-cn-beijing.aliyuncs.com/memtab.jpg)
+<div align=center><img src="https://mortre-picgo.oss-cn-beijing.aliyuncs.com/memtab.jpg" /></div>
