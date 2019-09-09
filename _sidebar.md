@@ -16,6 +16,9 @@
   - [JConsole](others/jconsole.md)
   - [Spring](others/spring.md)
   - [Architect-awesome](others/architect-awesome.md)
+  - [Garbage-Collection-1](garbage collection1.md)
+  - [Garbage-Collection-2](garbage collection3.md)
+  - [Garbage-Collection-3](garbage collection3.md)
 - StackOverflow
   - [android-sdk-installation-doesnt-find-jdk](stackoverflow/android-sdk-installation-doesnt-find-jdk.md)
   - [avoiding-null-statements-in-java](stackoverflow/avoiding-null-statements-in-java.md)
