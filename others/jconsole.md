@@ -21,7 +21,7 @@
 
 当你安装了 JDK，并且 `JDK_HOME`是一个目录时， jconsole 是位于 `JDK_HOME/bin`下的一个可执行文件，如果这个目录在你的系统路径下的话，你可以通过简单的命令来启动这个工具。否则，你必须通过完整的路径来运行这个可执行文件。
 
-### Command Syntax
+### Command Syntax（命令语法）
 
 你可以使用 `jconsole` 来监控你的本地应用（运行在同一个系统）和远程应用（运行在另一个系统）。
 
@@ -29,7 +29,7 @@
 
 关于 `jconsole`的命令，请参考 [jconsole - Java Monitoring and Management Console](https://docs.oracle.com/javase/1.5.0/docs/tooldocs/share/jconsole.html).
 
-#### *Local Monitoring*
+#### *Local Monitoring*（本地监控）
 
 要监视一个本地应用， 它必须以同样的用户 ID 运行在 `jconsole`中，启动`jconsole`本地监控的命令语法是： `jconsole [processID]`
 
@@ -46,7 +46,7 @@
 
 关于更多的信息，请看[Local JMX Monitoring and Management](https://docs.oracle.com/javase/1.5.0/docs/guide/management/agent.html#local).
 
-#### *Remote Monitoring*
+#### *Remote Monitoring*（远程监控）
 
 要启动 jconsole 来远程监控， 使用这个命令语法：
 
@@ -54,7 +54,7 @@
 
 如果你没有指定主机名/端口号组合，jconsole 将显示一个链接对话框（详见下一节）使你能够输入主机名和端口号。
 
-### Connecting to a JMX Agent
+### Connecting to a JMX Agent（连接 JMX 代理）
 
 如果使用指定要连接的 JMX 代理的参数启动 `jconsole`，它将自动启动来监控指定 JVM。你可以通过选择 **Connection | New Connection** 在任何时候来连接一个不同的主机，并且输入必要的信息。
 
@@ -70,7 +70,7 @@
 
 本地选项卡列出在本地系统上运行的所有 JVM，它们使用与 jconsole 相同的用户 ID 启动，以及它们的进程 ID 和类/参数信息。选择你想监控的应用，然后点击 Connection。
 
-#### *Remote Tab*（远程选项卡
+#### *Remote Tab*（远程选项卡）
 
 <div align=center><img /src="https://mortre-picgo.oss-cn-beijing.aliyuncs.com/remotetab.jpg"/></div>
 
@@ -96,60 +96,157 @@
 
 `jconsole -J-Djava.class.path=JAVA_HOME/lib/jconsole.jar:JAVA_HOME/lib/tools.jar:connector-path`
 
-## The jconsole interface
+## The jconsole interface（jconsole 接口）
 
 jconsole 界面由 6 个选项卡组成：
 
-- Summary tab: displays summary information on the JVM and monitored values.（“摘要”选项卡：显示有关JVM和受监视值的摘要信息）
-- Memory tab: displays information on memory use.（ Memory选项卡：显示有关内存使用的信息）
-- Threads tab: displays information on thread use.（线程选项卡：显示有关线程使用的信息）
-- Classes tab: displays information on class loading（类选项卡：显示有关类加载的信息 ）
-- MBeans tab: displays information on MBeans（MBeans选项卡：显示有关MBean的信息）
-- VM tab: displays information on the JVM（VM选项卡：显示有关JVM的信息）
+- 摘要选项卡：显示有关JVM和受监视值的摘要信息
+- 内存选项卡：显示有关内存使用的信息
+- 线程选项卡：显示有关线程使用的信息
+- MBeans选项卡：显示有关MBean的信息
+- VM选项卡：显示有关JVM的信息
 
 以下部分提供有关每个选项卡的信息。
 
-## Viewing Summary Information
+## Viewing Summary Information（查看摘要信息）
 
 摘要选项卡显示有关线程使用情况，内存消耗和类加载的一些关键监视信息，以及有关JVM和操作系统的信息。
 
 <div align=center><img src="https://mortre-picgo.oss-cn-beijing.aliyuncs.com/summarytab.jpg" /></div>
 
-### Summary
+### Summary（摘要）
 
-- **Uptime**: how long the JVM has been running（正常运行时间： JVM 运行了多久）
-- **Total compile time**: the amount of time spent in just-in-time (JIT) compilation.（总编译时间：在即时（JIT）编译中花费的时间量）
-- **Process CPU time**: the total amount of CPU time consumed by the JVM（进程CPU时间：JVM消耗的CPU总时间）
+- **正常运行时间**： JVM 运行了多久
+- **总编译时间**：在即时（JIT）编译中花费的时间量
+- **进程 CPU 时间**：JVM 消耗的 CPU 总时间
 
-### Threads
+### Threads（线程）
 
-- **Live threads**: Current number of live daemon threads plus non-daemon threads
-- **Peak**: Highest number of live threads since JVM started.
-- **Daemon threads**: Current number of live daemon threads
-- **Total started**: Total number of threads started since JVM started (including daemon, non-daemon, and terminated).
+- **实时线程**：当前活动守护程序线程数和非守护程序线程数 
+- **峰值**：自 JVM 启动以来最多的活动线程数。
+- **守护程序线程**：当前活动守护程序线程数 。
+- **总计开始的**: 自 JVM 启动以来启动的线程总数（包括守护进程，非守护进程）。
 
-### Memory
+### Memory（内存）
 
-- **Current heap size**: Number of Kbytes currently occupied by the heap.
-- **Committed memory**: Total amount of memory allocated for use by the heap.
-- **Maximum heap size**: Maximum number of Kbytes occupied by the heap.
-- **Objects pending for finalization**: Number of objects pending for finalization.
-- **Garbage collector information**: Information on GC, including the garbage collector names, number of collections performed, and total time spent performing GC.
+- **当前堆大小**：堆当前占用的 Kbytes 数。
+- **提交的内存**：分配给堆使用的内存总量。 
+- **最大堆大小**：堆占用的最大 Kbytes 数。 
+- **待完成的对象**：待完成的对象数。 
+- **垃圾收集器信息**：有关 GC 的信息，包括垃圾收集器名称，执行的收集数以及执行 GC 所花费的总时间。
 
-### Classes
+### Classes（内存）
 
-- **Current classes loaded**: Number of classes currently loaded into memory.
-- **Total classes loaded**: Total number of classes loaded into memory since the JVM started, included those subsequently unloaded.
-- **Total classes unloaded**: Number of classes unloaded from memory since the JVM started.
+- **当前加载的类**：当前加载到内存中的类的数量。 
+- **加载的类总数**：自 JVM 启动以来加载到内存中的类的总数，包括随后卸载的类。 
+- **卸载的总类数**：自 JVM 启动以来从内存中卸载的类数。
 
-### Operating System
+### Operating System（操作系统）
 
-- **Total physical memory**: Amount of random-access memory (RAM) that the OS has.
-- **Free physical memory**: Amount of free RAM the OS has.
-- **Committed virtual memory**: Amount of virtual memory guaranteed to be available to the running process.
+- **物理内存总量**：操作系统具有的随机存取内存（RAM）的数量。
+- **自由物理内存**：操作系统具有的可用 RAM 量。 
+- **提交的虚拟内存**：保证可供正在运行的进程使用的虚拟内存量。
 
-## Monitoring Memory Consumption
+## Monitoring Memory Consumption（监控内存消耗）
 
-The Memory tab provides information on memory consumption and memory pools.
+内存选项卡提供有关内存消耗和内存池的信息。
 
 <div align=center><img src="https://mortre-picgo.oss-cn-beijing.aliyuncs.com/memtab.jpg" /></div>
+
+该图表显示了 JVM 的内存使用与时间，堆和非堆内存以及特定内存池的关系。可用的内存池取决于所使用的 JVM。对于 HotSpot JVM，池是：
+
+- Eden Space (heap): pool from which memory is initially allocated for most objects.
+- Survivor Space (heap): pool containing objects that have survived GC of eden space.
+- Tenured Generation (heap): pool containing objects that have existed for some time in the survivor space.
+- Permanent Generation (non-heap): holds all the reflective data of the virtual machine itself, such as class and method objects. With JVMs that use [class data sharing](https://docs.oracle.com/javase/1.5.0/docs/guide/vm/class-data-sharing.html), this generation is divided into read-only and read-write areas.
+- Code Cache (non-heap): HotSpot JVM also includes a "code cache" containing memory used for compilation and storage of native code.
+
+关于内存池更多的信息，请看：[Garbage Collection.](https://docs.oracle.com/javase/1.5.0/docs/guide/management/jconsole.html#gc)
+
+**详细**信息区域显示了几个当前内存指标：
+
+- **Used**: the amount of memory currently used. Memory used includes the memory occupied by all objects including both reachable and unreachable objects.
+- **Committed**: the amount of memory guaranteed to be available for use by the JVM. The amount of committed memory may change over time. The Java virtual machine may release memory to the system and committed could be less than the amount of memory initially allocated at startup. Committed will always be greater than or equal to used.
+- **Max**: the maximum amount of memory that can be used for memory management. Its value may change or be undefined. A memory allocation may fail if the JVM attempts to increase the used memory to be greater than committed memory, even if the amount used is less than or equal to max (for example, when the system is low on virtual memory).
+
+右下方的条形图显示了堆和非堆内存中内存池消耗的内存。当使用的内存超过内存使用量阈值时，栏将变为红色。您可以通过 MemoryMXBean 的属性设置内存使用量阈值。
+
+### Heap and Non-heap Memory（堆和非堆内存）
+
+JVM 管理两种内存：堆和非堆内存，两者都在启动时创建。
+
+*堆内存*是运行时数据区，JVM 从中为所有类实例和数组分配内存。堆可以是固定的或可变的大小。垃圾收集器是一个自动内存管理系统，可回收对象的堆内存。 
+
+*非堆内存*包括在 JVM 的内部处理或优化所需的所有线程和内存之间共享的方法区域。它存储每类结构，例如运行时常量池，字段和方法数据，以及方法和构造函数的代码。方法区域在逻辑上是堆的一部分，但是根据实现，JVM 可能不会垃圾收集或压缩它。与堆一样，方法区域可以是固定的或可变的大小。方法区域的内存不需要是连续的。 
+
+除了方法区域之外，JVM 实现可能还需要用于内部处理或优化的内存，该内存也属于非堆内存。例如，JIT 编译器需要用于存储从 JVM 代码转换的本机机器代码的内存以获得高性能。
+
+### Memory Pools and Memory Managers（内存池和内存管理器）
+
+内存池和内存管理器是 JVM 内存系统的关键方面。
+
+*内存池*表示 JVM 管理的内存区域。 JVM 至少有一个内存池，它可以在执行期间创建或删除内存池。内存池可以属于堆内存或非堆内存。
+
+*内存管理器*管理一个或多个内存池。垃圾收集器是一种内存管理器，负责回收无法访问的对象使用的内存。 JVM 可能有一个或多个内存管理器。它可以在执行期间添加或删除内存管理器。内存池可以由多个内存管理器管理。
+
+### Garbage Collection（垃圾收集）
+
+Garbage collection (GC) is how the JVM frees memory occupied by objects that are no longer referenced. It is common to think of objects that have active references as being "alive" and un-referenced (or unreachable) objects as "dead." Garbage collection is the process of releasing memory used by the dead objects. The algorithms and parameters used by GC can have dramatic effects on performance.
+
+The HotSpot VM garbage collector uses *generational garbage collection*. Generational GC takes advantage of the observation that, in practice, most programs create:
+
+- many objects that have short lives (for example, iterators and local variables).
+- some objects that have very long lifetimes (for example, high level persistent objects)
+
+So, generational GC divides memory into several *generations*, and assigns each a memory pool. When a generation uses up its allotted memory, the VM performs a partial garbage collection (also called a *minor collection*) on that memory pool to reclaim memory used by dead objects. This partial GC is usually much faster than a full GC.
+
+The HotSpot VM defines two generations: the **young generation** (sometimes called the "nursery") and the **old generation**. The young generation consists of an "eden space" and two "survivor spaces." The VM initially assigns all objects to the eden space, and most objects die there. When it performs a minor GC, the VM moves any remaining objects from the eden space to one of the survivor spaces. The VM moves objects that live long enough in the survivor spaces to the "tenured" space in the old generation. When the tenured generation fills up, there is a full GC that is often much slower because it involves all live objects. The permanent generation holds all the reflective data of the virtual machine itself, such as class and method objects.
+
+The default arrangement of generations looks something like this:
+
+<div align=center><img src="https://mortre-picgo.oss-cn-beijing.aliyuncs.com/generations.gif"/></div>
+
+As explained in the following documents, if the garbage collector has become a bottleneck, you can improve performance by customizing the generation sizes. Using jconsole, explore the sensitivity of your performance metric to the garbage collector parameters. For more information, see:
+
+- [Tuning Garbage collection with the 5.0 HotSpot VM](http://java.sun.com/docs/hotspot/gc/index.html)
+
+## Monitoring Thread Use(监视线程使用)
+
+The Threads tab provides information on thread use.
+
+<div align=center><img src="https://mortre-picgo.oss-cn-beijing.aliyuncs.com/threadtab.jpg"/></div>
+
+The graph plots the number of classes loaded versus time:
+
+- Red line is the total number of classes loaded (including those subsequently unloaded).
+- Blue line is the current number of classes loaded.
+
+The Details section at the bottom of the tab displays the total number of classes loaded since the JVM started, the number currently loaded and the number unloaded.
+
+## Monitoring and Managing MBeans(监控和管理 MBeans)
+
+The MBean tab displays information on all the MBeans registered with the platform MBean server.
+
+<div align=center><img src="https://mortre-picgo.oss-cn-beijing.aliyuncs.com/20190909142055.png"/></div>
+
+The tree on the left shows all the MBeans, organized according to their objectNames. When you select an MBean in the tree, its attributes, operations, notifications and other information is displayed on the right.
+
+You can set the value of attributes, if they are writeable (the value will be displayed in blue).  You can also invoke operations displayed in the Operations tab.
+
+### Displaying a Chart(显示图表)
+
+You can display a chart of an attribute's value versus time by double-clicking on the attribute value.  For example, if you click on the value of the CollectionTime property of java.lang.GarbageCollector.Copy MBean, you will see a chart that looks something like this:
+
+<div align=center><img src="https://mortre-picgo.oss-cn-beijing.aliyuncs.com/20190909142141.png"/></div>
+
+## Viewing VM Information(查看 VM 信息)
+
+The VM tab provides information on the JVM.
+
+<div align=center><img src="https://mortre-picgo.oss-cn-beijing.aliyuncs.com/20190909142226.png"/></div>
+
+The information includes:
+
+- **Uptime**: Total amount of time since the JVM was started.
+- **Process CPU Time**: Total amount of CPU time that the JVM has consumed since it was started.
+- **Total Compile Time**: Total accumulated time spent in just-in-time (JIT) compilation. The JVM implementation determines when JIT compilation occurs. The Hotspot VM uses *adaptive compilation*, in which the VM launches an application using a standard interpreter, but then analyzes the code as it runs to detect performance bottlenecks, or "hot spots".
