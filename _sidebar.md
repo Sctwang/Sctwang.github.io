@@ -1,6 +1,6 @@
 - [Architect-awesome](others/architect-awesome.md)
 - 集合
-- [HashMap](collections/HashMap0.md)
+  - [HashMap](collections/HashMap0.md)
   - [HashMap](collections/HashMap1.md)
   - [ConcurrentHashMap](collections/ConcurrentHashMap.md)
   - [ArrayList/Vector](collections/ArrayList.md)
