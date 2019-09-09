@@ -1,6 +1,6 @@
+- [Architect-awesome](others/architect-awesome.md)
 - 集合
-
-  - [HashMap](collections/HashMap0.md)
+- [HashMap](collections/HashMap0.md)
   - [HashMap](collections/HashMap1.md)
   - [ConcurrentHashMap](collections/ConcurrentHashMap.md)
   - [ArrayList/Vector](collections/ArrayList.md)
@@ -15,7 +15,6 @@
   - [Docker](others/docker.md)
   - [JConsole](others/jconsole.md)
   - [Spring](others/spring.md)
-  - [Architect-awesome](others/architect-awesome.md)
   - [Garbage-Collection-1](others/garbage_collection1.md)
   - [Garbage-Collection-2](others/garbage_collection2.md)
   - [Garbage-Collection-3](others/garbage_collection3.md)
