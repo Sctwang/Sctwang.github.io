@@ -14,6 +14,7 @@
 - Sql
   - [MySQL](sql/MySQL.md)
 - Others
+  - [Hash](java/hash,md)
   - [Float / Double](others/float_double.md)
   - [Docker](others/docker.md)
   - [JConsole](others/jconsole.md)
