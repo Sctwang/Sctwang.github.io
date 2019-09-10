@@ -42,7 +42,7 @@
 
         this.loadFactor = loadFactor;
         this.threshold = tableSizeFor(initialCapacity);
-    }复制代码
+    }
 ```
 
 `HashMap(int initialCapacity, float loadFactor)`是最基础的构造函数。该构造函数提供两个参数`initialCapacity(初始大小)`、`loadFactor(加载因子)`。
@@ -69,7 +69,7 @@
         n |= n >>> 8;
         n |= n >>> 16;
         return (n < 0) ? 1 : (n >= MAXIMUM_CAPACITY) ? MAXIMUM_CAPACITY : n + 1;
-    }复制代码
+    }
 ```
 
 可以看出该方法是一系列的二进制位操作。先说明 `|=`的作用：`a |= b 等同于 a = a|b`。逐行分析`tableSizeFor`方法：
@@ -128,7 +128,7 @@
 ```
     n             ->  0001 0011
     n >>> 1       ->  0000 1001
-    n |= n >>> 1  ->  0001 1011复制代码
+    n |= n >>> 1  ->  0001 1011
 ```
 
 - `n |= n >>> 2;`
@@ -136,7 +136,7 @@
 ```
     n             ->  0001 1011
     n >>> 2       ->  0000 1101
-    n |= n >>> 2  ->  0001 1111复制代码
+    n |= n >>> 2  ->  0001 1111
 ```
 
 此时`n`所有位均为1，后续的位操作均不再改变`n`的值。
@@ -144,7 +144,7 @@
 ...
 
 ```
-    n + 1        ->  0010 0000 (32)复制代码
+    n + 1        ->  0010 0000 (32)
 ```
 
 最终，`tableSizeFor(20)`的结果为`32(2^5)`。
@@ -168,7 +168,7 @@
 
  等同于：
 
- index = e.hash % newCap复制代码
+ index = e.hash % newCap
 ```
 
 采用二进制位操作`&`，相对于`%`，能够提高运算效率，这就是要求`cap`的值被要求为`2`幂次方的原因。
@@ -214,7 +214,7 @@ static class Node<K,V> implements Map.Entry<K,V> {
             }
             return false;
         }
-    }复制代码
+    }
 ```
 
 `Node<K,V> 类`是`HashMap`中的静态内部类，实现`Map.Entry<K,V>`接口。 定义了`key`键、`value`值、`next`节点，也就是说元素之间构成了单向链表。
@@ -233,7 +233,7 @@ static class Node<K,V> implements Map.Entry<K,V> {
     static final int hash(Object key) {
         int h;
         return (key == null) ? 0 : (h = key.hashCode()) ^ (h >>> 16);
-    }复制代码
+    }
 ```
 
 而上面我们提到`index`的运算规则是`e.hash & (newCap - 1)`。由于`newCap`是`2`的幂次方，那么`newCap - 1`的高位应该全部为`0`。如果`e.hash`值只用自身的`hashcode`的话，那么`index`只会和`e.hash`低位做`&`操作。这样一来，`index`的值就只有低位参与运算，高位毫无存在感，从而会带来哈希冲突的风险。所以在计算`key`的哈希值的时候，用其自身`hashcode`值与其低`16`位做异或操作。这也就让高位参与到`index`的计算中来了，即降低了哈希冲突的风险又不会带来太大的性能问题。
@@ -296,7 +296,7 @@ static class Node<K,V> implements Map.Entry<K,V> {
             resize();
         afterNodeInsertion(evict);
         return null;
-    }复制代码
+    }
 ```
 
 在构造函数中最多也只是设置了`initialCapacity`、`loadFactor`的值，并没有初始化`table`，`table`的初始化工作是在`put`方法中进行的。
@@ -386,7 +386,7 @@ final Node<K,V>[] resize() {
             }
         }
         return newTab;
-    }复制代码
+    }
 ```
 
 #### remove(key) 方法 & remove(key, value) 方法
