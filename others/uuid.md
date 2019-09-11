@@ -1,8 +1,10 @@
 ## UUID
 
-- 介绍
+> UUID 唯一缺陷在于生成的结果串较长，而且无序。
+
+- 介绍：
   
-- UUID 是 通用唯一识别码（Universally Unique Identifier）的缩写，是一种软件建构的标准。其目的，是让分布式系统中的所有元素，都能有唯一的辨识信息，而不需要通过中央控制端来做辨识信息的指定。
+  - UUID 是 通用唯一识别码（Universally Unique Identifier）的缩写，是一种软件建构的标准。其目的，是让分布式系统中的所有元素，都能有唯一的辨识信息，而不需要通过中央控制端来做辨识信息的指定。
   
 - 定义
 
@@ -56,4 +58,21 @@
 
 
 
-​    
+- 实现
+
+~~~java
+	import java.util.UUID;
+
+    /**
+     * @author wyz
+     * @date 2019/9/11 10:39
+     */
+	public static void main(String[] args) {
+        UUID uuid = UUID.randomUUID();
+        
+        // 输出为：4aa3c6cb-d3f9-44fc-8c7a-2a5f2252b576
+        System.out.println(uuid);
+    }
+
+~~~
+
