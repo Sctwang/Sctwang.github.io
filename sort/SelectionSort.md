@@ -1,7 +1,7 @@
 ## SelectionSort 选择排序
 
 ~~~java
-	public void SelectionSort(int[] arr) {
+	public static void SelectionSort(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             // 寻找[i, n)区间里的最小值的索引
             int minIndex = i;

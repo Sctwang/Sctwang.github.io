@@ -9,6 +9,7 @@
   - [ShellSort](sort/ShellSort.md)
   - [GCD](others/gcd.md)
   - [KMP](others/kmp.md)
+  - [UUID](others/uuid.md)
 - 集合
   - [HashMap](collections/HashMap0.md)
   - [HashMap](collections/HashMap1.md)

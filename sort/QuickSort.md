@@ -27,7 +27,7 @@
 
 ~~~java
 	// 递归使用快速排序,对arr[l...r]的范围进行排序
-    public void QuickSort(int[] arr,int l,int r){
+    public static void QuickSort(int[] arr,int l,int r){
         if(l>=r) {
             return;
         }
@@ -40,7 +40,7 @@
     // 将数组通过p分割成两部分
 	// 对arr[l...r]部分进行partition操作
 	// 返回p, 使得arr[l...p-1] < arr[p] ; arr[p+1...r] > arr[p]
-    public int partition(int[] arr, int l, int r) {
+    public static int partition(int[] arr, int l, int r) {
         // 加入这一行变成随机快速排序
         swap(arr, l, (int) (Math.random() % (r - l + 1)) + l);
 
@@ -56,7 +56,7 @@
         return j;
     }
 
-    public void swap(int[] arr,int i,int j) {
+    public static void swap(int[] arr,int i,int j) {
         int temp = arr[i];
         arr[i] = arr[j];
         arr[j] = temp;

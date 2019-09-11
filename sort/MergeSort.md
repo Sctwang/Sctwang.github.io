@@ -7,7 +7,7 @@
         sort(arr, 0, arr.length - 1, temp);
     }
 
-    private void sort(int[] arr, int left, int right, int[] temp) {
+    private static void sort(int[] arr, int left, int right, int[] temp) {
         if (left < right) {
             int mid = (left + right) / 2;
             // 左边归并排序，使得左子序列有序
@@ -19,7 +19,7 @@
         }
     }
 
-    private void merge(int[] arr, int left, int mid, int right, int[] temp) {
+    private static void merge(int[] arr, int left, int mid, int right, int[] temp) {
         // 左序列指针
         int i = left;
         // 右序列指针

@@ -1,7 +1,7 @@
 ## BinarySearch 二分查找算法
 
 ~~~java
-	public int binarySearch(int[] A, int n, int val) {
+	public static int binarySearch(int[] A, int n, int val) {
         Arrays.sort(A);
         n = A.length;
         int low = 0;

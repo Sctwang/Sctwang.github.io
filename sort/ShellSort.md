@@ -27,7 +27,7 @@
 
 ~~~java
 
-    public void shellSort(int[] arr) {
+    public static void shellSort(int[] arr) {
         int n = arr.length;
         // 计算 increment sequence: 1, 4, 13, 40, 121, 364, 1093...
         int h = 1;
