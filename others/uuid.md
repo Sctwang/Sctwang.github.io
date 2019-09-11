@@ -1,8 +1,9 @@
 ## UUID
 
 - 介绍
-  - UUID 是 通用唯一识别码（Universally Unique Identifier）的缩写，是一种软件建构的标准。其目的，是让分布式系统中的所有元素，都能有唯一的辨识信息，而不需要通过中央控制端来做辨识信息的指定。
-
+  
+- UUID 是 通用唯一识别码（Universally Unique Identifier）的缩写，是一种软件建构的标准。其目的，是让分布式系统中的所有元素，都能有唯一的辨识信息，而不需要通过中央控制端来做辨识信息的指定。
+  
 - 定义
 
   - UUID 是由一组 32 位数的 16 进制数字所构成，所以 UUID 理论上的总数为 16^32=2^128，约等于 3.4 x 10^38。也就是说若每纳秒产生 1 兆个 UUID，要花 100 亿年才会将所有 UUID 用完。
@@ -31,26 +32,28 @@
 
 - 源码
 
-  - ~~~java
-    	/**
-         * Static factory to retrieve a type 4 (pseudo randomly generated) UUID.
-         *
-         * The {@code UUID} is generated using a cryptographically strong pseudo
-         * random number generator.
-         *
-         * @return  A randomly generated {@code UUID}
-         */
-        public static UUID randomUUID() {
-            SecureRandom ng = Holder.numberGenerator;
-    
-            byte[] randomBytes = new byte[16];
-            ng.nextBytes(randomBytes);
-            randomBytes[6]  &= 0x0f;  /* clear version        */
-            randomBytes[6]  |= 0x40;  /* set to version 4     */
-            randomBytes[8]  &= 0x3f;  /* clear variant        */
-            randomBytes[8]  |= 0x80;  /* set to IETF variant  */
-            return new UUID(randomBytes);
-        }
-    ~~~
+~~~java
+	/**
+     * Static factory to retrieve a type 4 (pseudo randomly generated) UUID.
+     *
+     * The {@code UUID} is generated using a cryptographically strong pseudo
+     * random number generator.
+     *
+     * @return  A randomly generated {@code UUID}
+     */
+    public static UUID randomUUID() {
+        SecureRandom ng = Holder.numberGenerator;
 
-    
+        byte[] randomBytes = new byte[16];
+        ng.nextBytes(randomBytes);
+        randomBytes[6]  &= 0x0f;  /* clear version        */
+        randomBytes[6]  |= 0x40;  /* set to version 4     */
+        randomBytes[8]  &= 0x3f;  /* clear variant        */
+        randomBytes[8]  |= 0x80;  /* set to IETF variant  */
+        return new UUID(randomBytes);
+    }
+~~~
+
+
+
+​    
