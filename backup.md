@@ -9,3 +9,10 @@ LeetCode
 - [leetcode_292](leetcode/leetcode_292.md)
 - [leetcode_344](leetcode/leetcode_344.md)
 - [leetcode_557](leetcode/leetcode_577.md)
+
+  - [BubbleSort](sort/BubbleSort.md)
+  - [InsertSort](sort/InsertSort.md)
+  - [MergeSort](sort/MergeSort.md)
+  - [QuickSort](sort/QuickSort.md)
+  - [SelectionSort](sort/SelectionSort.md)
+  - [ShellSort](sort/ShellSort.md)
