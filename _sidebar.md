@@ -4,6 +4,10 @@
   - [GCD](others/gcd.md)
   - [KMP](others/kmp.md)
   - [UUID](others/uuid.md)
+- DataStructure
+  - [Queue](back/queue.md)
+  - [Set](back/set.md)
+  - [Stack](back/stack.md)
 - 集合
   - [HashMap](collections/HashMap0.md)
   - [HashMap](collections/HashMap1.md)
@@ -12,11 +16,7 @@
   - [LinkedList](collections/LinkedList.md)
   - [HashSet](collections/HashSet.md)
   - [LinkedHashMap](collections/LinkedHashMap.md)
-- Sql
-  - [MySQL](sql/MySQL.md)
 - Others
-  - [Queue](back/queue.md)
-  - [Set](back/set.md)
   - [Hash](java/hash.md)
   - [Float / Double](others/float_double.md)
   - [Docker](others/docker.md)
@@ -25,6 +25,8 @@
   - [Garbage-Collection-1](others/garbage_collection1.md)
   - [Garbage-Collection-2](others/garbage_collection2.md)
   - [Garbage-Collection-3](others/garbage_collection3.md)
+- Sql
+  - [MySQL](sql/MySQL.md)
 - StackOverflow
   - [android-sdk-installation-doesnt-find-jdk](stackoverflow/android-sdk-installation-doesnt-find-jdk.md)
   - [avoiding-null-statements-in-java](stackoverflow/avoiding-null-statements-in-java.md)
