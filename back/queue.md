@@ -16,8 +16,8 @@ Queue 接口继承 Collection;
 
 - 源码
 
-  ```java
-  public interface Queue<E> extends Collection<E> {
+```java
+	public interface Queue<E> extends Collection<E> {
       // Inserts the specified element into this queue if it is possible to do so immediately without violating capacity restrictions, returning {@code true} upon success and throwing an {@code IllegalStateException} if no space is currently available.
       boolean add(E e);
       
@@ -36,18 +36,20 @@ Queue 接口继承 Collection;
       // Retrieves, but does not remove, the head of this queue, or returns {@code null} if this queue is empty.
       E peek();
   }
-  ```
+```
 
+- 注解：
 
-
-​		**add**        增加一个元索                     			如果队列已满，则抛出一个 IIIegaISlabEepeplian 异常
-　　**remove**   移除并返回队列头部的元素    	如果队列为空，则抛出一个 NoSuchElementException 异常
-　　**element**  返回队列头部的元素           		如果队列为空，则抛出一个 NoSuchElementException 异常
-　　**offer**       添加一个元素并返回true         	如果队列已满，则返回 false
-　　**poll**         移除并返问队列头部的元素     	如果队列为空，则返回 null
-　　**peek**       返回队列头部的元素                	如果队列为空，则返回 null
-　　**put**         添加一个元素                            	如果队列满，则阻塞
-　　**take**        移除并返回队列头部的元素   	 如果队列为空，则阻塞
+~~~java
+	add			增加一个元索				如果队列已满，则抛出一个 IIIegaISlabEepeplian 异常
+	remove   	移除并返回队列头部的元素	如果队列为空，则抛出一个 NoSuchElementException 异常
+	element		返回队列头部的元素 		  如果队列为空，则抛出一个 NoSuchElementException 异常
+	offer       添加一个元素并返回true     如果队列已满，则返回 false
+    poll        移除并返问队列头部的元素    如果队列为空，则返回 null
+	peek        返回队列头部的元素         如果队列为空，则返回 null
+    put         添加一个元素              如果队列满，则阻塞
+    take        移除并返回队列头部的元素   	如果队列为空，则阻塞
+~~~
 
 
 

@@ -1,6 +1,6 @@
 ## Stack 栈
 
-> Stack 栈的各种方法
+
 
 ~~~java
 
