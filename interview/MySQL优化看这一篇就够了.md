@@ -1,12 +1,4 @@
----
-title: MySQL优化看这一篇就够了
-date: 2018-12-25 11:04:03
-create_by:github.com/zanwen/my-offer-to-java
-comments: true
-photos: "http://zanwenblog.oss-cn-beijing.aliyuncs.com/18-12-29/51481063.jpg"
-categories: 数据库
-tags: MySQL
----
+
 
 # 本文概要
 
@@ -33,7 +25,7 @@ tags: MySQL
 
 ## 原则：尽量使用整型表示字符串
 
-### 存储IP
+### 存储 IP
 
 `INET_ATON(str)`，address to number
 

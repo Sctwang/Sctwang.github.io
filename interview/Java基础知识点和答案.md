@@ -16,12 +16,12 @@ Integer i = 10;
 Integer i = 10;  //装箱
 int n = i;   //拆箱
 ```
-# 1.3  short s1 = 1; s1 = s1 + 1;有什么错? short s1 = 1; s1 +=1;有什么错?
+# 1.3  short s1 = 1; s1 = s1 + 1;错吗? short s1 = 1; s1 +=1;错吗？
 
 - 对于short s1=1;s1=s1+1来说，在s1+1运算时会自动提升表达式的类型为int，那么将int赋予给short类型的变量s1会出现类型转换错误。
 - 对于short s1=1;s1+=1来说 +=是java语言规定的运算符，java编译器会对它进行特殊处理，因此可以正确编译。
 
-# 1.4 int和Integer的区别
+# 1.4 int 和 Integer的区别
 
 https://www.cnblogs.com/guodongdidi/p/6953217.html
 
@@ -37,7 +37,7 @@ https://www.cnblogs.com/guodongdidi/p/6953217.html
 Integer i = new Integer(100);
 Integer j = new Integer(100);
 System.out.print(i == j); //false
-``` 
+```
 2、Integer变量和int变量比较时，只要两个变量的值是向等的，则结果为true（因为包装类Integer和基本数据类型int比较时，java会自动拆包装为int，然后进行比较，实际上就变为两个int变量的比较）
 ```
 Integer i = new Integer(100);
@@ -93,6 +93,7 @@ https://blog.csdn.net/cey009008/article/details/46331619
 - 3.子类方法的访问修饰符要大于父类的。  
 - 4.子类的检查异常类型要小于父类的检查异常。  
 # 1.9 Java中是否可以覆盖(override)一个private或者是static的方法？
+
 Java中static方法不能被覆盖，因为方法覆盖是基于运行时动态绑定的，而static方法是编译时静态绑定的。static方法跟类的任何实例都不相关，所以概念上不适用。java中也不可以覆盖private的方法，因为private修饰的变量和方法只能在当前类中使用，如果是其他的类继承当前类是不能访问到private变量或方法的，当然也不能覆盖。
 # 1.10 面向对象的六个基本原则
 ![](http://ww1.sinaimg.cn/large/007s8HJUly1g5w39fm22gj30vw0hy13y.jpg)
@@ -264,9 +265,10 @@ finally 一定会被执行，如果 finally 里有 return 语句，则覆盖 try
 ## 三．finally代码块和finalize()方法有什么区别？
 无论是否抛出异常，finally代码块都会执行，它主要是用来释放应用占用的资源。finalize()方法是Object类的一个protected方法，它是在对象被垃圾回收之前由Java虚拟机来调用的。
 ## 四. finally到底是在return之前执行还是return之后执行？
-https://mp.weixin.qq.com/s?__biz=MzI5MzYzMDAwNw==&mid=2247485244&idx=1&sn=162035183aa027b887fc642fddc4ad69&scene=19&token=557705008&lang=zh_CN#wechat_redirect
+[微信链接](https://mp.weixin.qq.com/s?__biz=MzI5MzYzMDAwNw==&mid=2247485244&idx=1&sn=162035183aa027b887fc642fddc4ad69&scene=19&token=557705008&lang=zh_CN#wechat_redirect)
+
 ## 五. final关键字详解
-https://mp.weixin.qq.com/s?__biz=MzI5MzYzMDAwNw==&mid=2247485027&idx=1&sn=f565be7c5ce33e9737d94ce9a58bd0ea&scene=19&token=557705008&lang=zh_CN#wechat_redirect
+[微信链接](https://mp.weixin.qq.com/s?__biz=MzI5MzYzMDAwNw==&mid=2247485027&idx=1&sn=f565be7c5ce33e9737d94ce9a58bd0ea&scene=19&token=557705008&lang=zh_CN#wechat_redirect)
 
 # 1.23 public private default protected
 ![](http://ww1.sinaimg.cn/large/007s8HJUly1g5yfwftsjrj30ha06wjsq.jpg)
@@ -373,7 +375,7 @@ http://www.importnew.com/24029.html
 ```
 List<String> rawList = new ArrayList()
 ```
-    
+
 # 1.31 泛型 ？与T的区别
 https://blog.csdn.net/woshizisezise/article/details/79374460
 ```
@@ -447,11 +449,14 @@ inputStream的read()虽然也返回int，但由于此类是面向字节流的，
 一、字符（Reader和 Writer）：中文，字符是只有在内存中才会形成的，操作字符、字符数组或字符串，
 二、字节（InputStream 和OutputStream）：音频文件、图片、歌曲，所有的硬盘上保存文件或进行传输的时候，操作字节和字节数组或二进制对象,
 *如果要java程序实现一个拷贝功能，应该选用字节流进行操作（可能拷贝的是图片），并且采用边读边写的方式（节省内存）。
+
+
+
 # 1.33 父子类的加载顺序？
 >面试和笔试经常考
 
 详情可以看：
-https://mp.weixin.qq.com/s?__biz=MzI5MzYzMDAwNw==&mid=2247485357&idx=1&sn=4cfda217b421eb5144d7b873894b5206&scene=19&token=557705008&lang=zh_CN#wechat_redirect
+[微信链接](https://mp.weixin.qq.com/s?__biz=MzI5MzYzMDAwNw==&mid=2247485357&idx=1&sn=4cfda217b421eb5144d7b873894b5206&scene=19&token=557705008&lang=zh_CN#wechat_redirect)
 
 类的加载顺序。
 - (1) 父类静态代码块(包括静态初始化块，静态属性，但不包括静态方法)
@@ -463,20 +468,27 @@ https://mp.weixin.qq.com/s?__biz=MzI5MzYzMDAwNw==&mid=2247485357&idx=1&sn=4cfda2
 
 # 1.34 什么是字符集和编码？
 
-https://mp.weixin.qq.com/s?__biz=MzI5MzYzMDAwNw==&mid=2247484848&idx=1&sn=ad7f134c40574ec1214df28b078c88e1&scene=19&token=557705008&lang=zh_CN#wechat_redirect
 
-# 1.35 Math.round(11.5)等於多少? Math.round(-11.5)等於多少?
+
+[微信链接](https://mp.weixin.qq.com/s?__biz=MzI5MzYzMDAwNw==&mid=2247484848&idx=1&sn=ad7f134c40574ec1214df28b078c88e1&scene=19&token=557705008&lang=zh_CN#wechat_redirect)
+
+# 1.35 Math.round(11.5)等於多少? Math.round(-11.5)等于多少?
+
 Math 类中提供了三个与取整有关的方法：ceil、floor、round，这些方法的作用与它们的英
 文名称的含义相对应，例如，ceil 的英文意义是天花板，该方法就表示向上取整，
 Math.ceil(11.3)的结果为12,Math.ceil(-11.3)的结果是-11；floor 的英文意义是地板，该方法
 就表示向下取整，Math.ceil(11.6)的结果为11,Math.ceil(-11.6)的结果是-12；最难掌握的是
 round 方法，它表示“四舍五入”，算法为 Math.floor(x+0.5)，即将原来的数字加上0.5后再向
 下取整，所以，Math.round(11.5)的结果为12，Math.round(-11.5)的结果为-11。
+
 # 1.36 char 型变量中能不能存贮一个中文汉字?为什么?
+
+
+
 >作业帮面试题
 
 char 型变量是用来存储 Unicode 编码的字符的，unicode 编码字符集中包含了汉字，所以，
 char 型变量中当然可以存储汉字啦。不过，如果某个特殊的汉字没有被包含在 unicode 编
 码字符集中，那么，这个 char 型变量中就不能存储这个特殊汉字。补充说明：unicode 编
 码占用两个字节，所以，char 类型的变量也是占用两个字节。
-# 1.37
+

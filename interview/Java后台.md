@@ -1,4 +1,4 @@
-> 2019秋招几个月累积的知识点，东西太多，懒得重整理做索引，尽量用(*)和**加粗**标注出高频知识点, 都是面试问过的或笔试考过的 作者redfisky
+
 
 **Java基础知识(*)**
 
@@ -322,7 +322,7 @@ SingletonBeanRegistry：定义了允许在运行期间向容器注册单实例 B
 
 
   **@Bean, @Component 区别**
-  
+
 
  - Componet 一般放在类上面，Bean放在方法上面，自己可控制是否生成bean.
 bean 一般会放在classpath scanning路径下面，会自动生成bean.
@@ -371,7 +371,7 @@ PriorityBlockingQueue：一个具有优先级的无限阻塞队列。
    1.5中Java线程池框架提供了以下4种策略。  AbortPolicy：直接抛出异常。 CallerRunsPolicy：只用调用者所在线程来运行任务。
    DiscardOldestPolicy：丢弃队列里最近的一个任务，并执行当前任务。 DiscardPolicy：不处理，丢弃掉。
 
- 
+
 **ArrayList,LinkedList **
 
  - ArrayList初始化可以指定大小，知道大小的建议指定
@@ -412,39 +412,39 @@ hash()和indexFor()
     void resize(int newCapacity) {
         Entry[] oldTable = table;
         int oldCapacity = oldTable.length;
-
+    
         // 若 oldCapacity 已达到最大值，直接将 threshold 设为 Integer.MAX_VALUE
         if (oldCapacity == MAXIMUM_CAPACITY) {
             threshold = Integer.MAX_VALUE;
             return;             // 直接返回
         }
-
+    
         // 否则，创建一个更大的数组
         Entry[] newTable = new Entry[newCapacity];
-
+    
         //将每条Entry重新哈希到新的数组中
         transfer(newTable);
-
+    
         table = newTable;
         threshold = (int) (newCapacity * loadFactor);  // 重新设定 threshold
     }
-
+    
     void transfer(Entry[] newTable) {
-
+    
         // 将原数组 table 赋给数组 src
         Entry[] src = table;
         int newCapacity = newTable.length;
-
+    
         // 将数组 src 中的每条链重新添加到 newTable 中
         for (int j = 0; j < src.length; j++) {
             Entry<K,V> e = src[j];
             if (e != null) {
                 src[j] = null;   // src 回收
-
+    
                 // 将每条链的每个元素依次添加到 newTable 中相应的桶中
                 do {
                     Entry<K,V> next = e.next;
-
+    
                     // e.hash指的是 hash(key.hashCode())的返回值;
                     // 计算在newTable中的位置，注意原来在同一条子链上的元素可能被分配到不同的子链
                     int i = indexFor(e.hash, newCapacity);   
@@ -501,14 +501,14 @@ HashEntry
        final int hash;                   // 声明 hash 值为 final 的
        volatile V value;                // 声明 value 被volatile所修饰
        final HashEntry<K,V> next;      // 声明 next 为 final 的
-
+    
         HashEntry(K key, int hash, HashEntry<K,V> next, V value) {
             this.key = key;
             this.hash = hash;
             this.next = next;
             this.value = value;
         }
-
+    
         @SuppressWarnings("unchecked")
         static final <K,V> HashEntry<K,V>[] newArray(int i) {
         return new HashEntry[i];
@@ -524,7 +524,7 @@ put(), get()
  - **HashTable 和由同步包装器包装的HashMap每次只能有一个线程执行读或写操作**，ConcurrentHashMap 在并发访问性能上有了质的提高。在理想状态下，ConcurrentHashMap 可以支持 **16 个线程**执行**并发写操作**（如果并发级别设置为 16），及**任意数量线程的读操作**。
 
  重哈希rehash()
- 
+
 
  - ConcurrentHashMap的重哈希实际上是对ConcurrentHashMap的某个段的重哈希，因此ConcurrentHashMap的每个段所包含的桶位自然也就不尽相同
 
@@ -568,7 +568,7 @@ put(), get()
                 HashEntry<K,V> e = first;
                 while (e != null && (e.hash != hash || !key.equals(e.key)))  // 查找待删除的键值对
                     e = e.next;
-
+    
                 V oldValue = null;
                 if (e != null) {    // 找到
                     V v = e.value;
@@ -583,7 +583,7 @@ put(), get()
                         // 所有处于待删除节点之前的节点被克隆到新链表中
                         for (HashEntry<K,V> p = first; p != e; p = p.next)
                             newFirst = new HashEntry<K,V>(p.key, p.hash,newFirst, p.value); 
-
+    
                         tab[index] = newFirst;   // 将删除指定节点并重组后的链重新放到桶中
                         count = c;      // write-volatile，更新Volatile变量count
                     }
@@ -837,6 +837,7 @@ CMS,G1
 
  
 
+
  - **JDK动态代理，接口，用Proxy.newProxyInstance生成代理对象，InvocationHandler**
  - **CGLIB，类，用enhancer生成代理对象，MethodInteceptor**
  - **如果目标对象实现了接口，默认情况下会采用JDK的动态代理实现AOP ;
@@ -951,14 +952,14 @@ Hash底层结构
 
 
     public class Singleton2 {
-
+    
     private volatile static Singleton2 singleton2;
-
+    
     private Singleton2() {
     }
-
+    
     public static Singleton2 getSingleton2() {
-
+    
         if (singleton2 == null) {
             synchronized (Singleton2.class) {
                 if (singleton2 == null) {
@@ -969,7 +970,7 @@ Hash底层结构
         return singleton2;
     }
     }
-    
+
 
  - 第一个if (instance == null)，只有instance为null的时候，才进入synchronized.
 第二个if (instance == null)，是为了防止可能出现多个实例的情况。
@@ -983,14 +984,14 @@ Hash底层结构
 静态内部类
 
     public class Singleton1 {
-
+    
     private Singleton1() {
     }
-
+    
     public static final Singleton1 getSingleton1() {
         return Singleton1Holder.singleton1;
     }
-
+    
     private static class Singleton1Holder {
         private static final Singleton1 singleton1 = new Singleton1();
     }
@@ -1011,7 +1012,7 @@ Hash底层结构
         static class Entry extends WeakReference<ThreadLocal> {
             /** The value associated with this ThreadLocal. */
             Object value;
-
+    
             Entry(ThreadLocal k, Object v) {
                 super(k);
                 value = v;
@@ -1058,7 +1059,7 @@ Hash底层结构
 ![enter image description here](http://m.qpic.cn/psb?/V11B95m82dM6q3/Hq6Mg3CYXq1YV.QjqUstoTjRJAas4OQRw0ABlUsQ418!/b/dEcBAAAAAAAA&bo=AgWTAAAAAAADB7Y!&rf=viewer_4)
 
 **innoDB和MyISAM的区别? (*)**
- 
+
 
  - https://www.jianshu.com/p/a957b18ba40d
 
@@ -1066,7 +1067,7 @@ Hash底层结构
  - InnoDB支持外键，而MyISAM不支持。对一个包含外键的InnoDB表转为MYISAM会失败；
  - InnoDB是聚集索引，数据文件是和索引绑在一起的，必须要有主键，通过主键索引效率很高。但是辅助索引需要两次查询，先查询到主键，然后再通过主键查询到数据。因此，主键不应该过大，因为主键太大，其他索引也都会很大。而MyISAM是非聚集索引，数据文件是分离的，索引保存的是数据文件的指针。主键索引和辅助索引是独立的。
  - InnoDB不保存表的具体行数，执行select count(*) from table时需要全表扫描。而MyISAM用一个变量保存了整个表的行数，执行上述语句时只需要读出该变量即可，速度很快；  
- 
+
  - Innodb不支持全文索引，而MyISAM支持全文索引，查询效率上MyISAM要高；
 
 **索引失效 (*)**
@@ -1716,20 +1717,21 @@ value(i,j) = |-> max(value(i-w[j],j-1)+s[j],value(i-1,j-1) (i-w[j] >= 0)
       public class leftshift_operator {
       public static void main(String args[]){
 
-         
+
+​         
 
           byte x = 64;
-
+    
           int i;
-
+    
           byte y;
-
+    
           i = x<<2;
-
+    
           y = (byte)(x<<2);
-
+    
           System.out.print(i+ " " +y);
-
+    
       }
       }
 
@@ -1756,7 +1758,7 @@ value(i,j) = |-> max(value(i-w[j],j-1)+s[j],value(i-1,j-1) (i-w[j] >= 0)
 
     public static void main(String[] args) {  
     int num1 = 6, num2 = 7, num3 = 12;  
-  
+      
     if (++num1 == num2)  
         num3 = ++num3 * 3;  
     System.out.println(num3);
@@ -1777,32 +1779,32 @@ value(i,j) = |-> max(value(i-w[j],j-1)+s[j],value(i-1,j-1) (i-w[j] >= 0)
     public class whatTheHell {  
     public whatTheHell() {  
     }  
-  
+      
     private String a;  
     private Integer b;  
-  
+      
     public whatTheHell(String a, Integer b) {  
         this.a = a;  
         this.b = b;  
     }  
-  
+      
     public String getA() {  
-  
+      
         return a;  
     }  
-  
+      
     public void setA(String a) {  
         this.a = a;  
     }  
-  
+      
     public Integer getB() {  
         return b;  
     }  
-  
+      
     public void setB(Integer b) {  
         this.b = b;  
     }  
-  
+      
     public static void main(String[] args) {  
         Class<whatTheHell> whatTheHellClass = whatTheHell.class;  
         try {  
@@ -1816,7 +1818,7 @@ value(i,j) = |-> max(value(i-w[j],j-1)+s[j],value(i-1,j-1) (i-w[j] >= 0)
           
     }
     }  
-  
+
 
  - 不提供默认构造器会报错。
 
