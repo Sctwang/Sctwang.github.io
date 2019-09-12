@@ -1,5 +1,5 @@
 - Awesome
-  - [Architect-awesome](others/architect-awesome.md)
+  - [Architect - awesome](others/architect-awesome.md)
 - Algorithm
   - [GCD](others/gcd.md)
   - [KMP](others/kmp.md)
@@ -12,7 +12,7 @@
   - [HashMap](collections/HashMap0.md)
   - [HashMap](collections/HashMap1.md)
   - [ConcurrentHashMap](collections/ConcurrentHashMap.md)
-  - [ArrayList/Vector](collections/ArrayList.md)
+  - [ArrayList / Vector](collections/ArrayList.md)
   - [LinkedList](collections/LinkedList.md)
   - [HashSet](collections/HashSet.md)
   - [LinkedHashMap](collections/LinkedHashMap.md)
@@ -25,6 +25,7 @@
   - [Garbage-Collection-1](others/garbage_collection1.md)
   - [Garbage-Collection-2](others/garbage_collection2.md)
   - [Garbage-Collection-3](others/garbage_collection3.md)
+  - [V2EX-射击游戏水贴](https://www.v2ex.com/t/599785)
 - Sql
   - [MySQL](sql/MySQL.md)
 - StackOverflow
