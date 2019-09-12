@@ -3,6 +3,11 @@
 
 
 <div align="center"><img src="https://i.loli.net/2019/05/09/5cd3c057cdee2.jpg" width="600px"/> </div>
+
+#### 小站是本人用来做复习的，不做其他用途。内容包含原创和其他作者的文章，转载文章均已注明出处，如有遗漏或侵权，请联系我删除。
+
+
+
 ## 目录
 
 - 集合
@@ -17,6 +22,8 @@
 
 ​		**interview 下的文章转自 [gzc426](https://github.com/gzc426/Java-Interview)**
 
+
+
 ## 其它
 
 推荐资源：
@@ -29,7 +36,11 @@
 
 笔记：[后端架构师技术图谱](https://github.com/xingshaocheng/architect-awesome)
 
+
+
 ## 联系方式
 
-Email: mortre@163.com
+[GitHub](https://www.github.com/Sctwang)
+
+[Email](mailto:mortre@163.com)
 
