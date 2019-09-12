@@ -114,7 +114,7 @@
 
 - 答案
 
-  ~~~mysql
+  ~~~
   1. 查询所有学生的成绩，没有成绩的也需要显示学生信息，显示（学号、姓名、课程名称、成绩）[6分]
   SELECT hs.student_no,hs.STUDENT_NAME,hc.COURSE_NAME,hsc.core
     FROM HAND_STUDENT hs 
