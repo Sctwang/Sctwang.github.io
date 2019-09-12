@@ -1,4 +1,4 @@
-## SearchStrInPath 在问价夹中查找文件内指定字符串
+## SearchStrInPath 在文件夹中查找文件内指定字符串
 
 - 具体实现：
 
