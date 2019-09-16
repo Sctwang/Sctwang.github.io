@@ -3,18 +3,19 @@
 
 
 <div align="center"><img src="https://i.loli.net/2019/05/09/5cd3c057cdee2.jpg" width="600px"/> </div>
-
 #### 小站是本人用来做复习的，不做其他用途。内容包含原创和其他作者的文章，转载文章均已注明出处，如有遗漏或侵权，请联系我删除。
 
 
 
 ## 目录
 
-- 集合
-- Back
-- Others
-- StackOverflow
-- malloy
+
+
+| Awesome                                            | Interview                       | Algorithm            | DataStructure                 | 集合                            | Sql                   | Others                 |
+| -------------------------------------------------- | ------------------------------- | -------------------- | ----------------------------- | ------------------------------- | --------------------- | ---------------------- |
+| [Architect - awesome](others/architect-awesome.md) | [Interview](interview/Java后台) | [GCD](others/gcd.md) | [DataSructure](back/queue.md) | [集合](collections/HashMap0.md) | [MySQL](sql/MySQL.md) | [Others](java/hash.md) |
+
+
 
 
 
