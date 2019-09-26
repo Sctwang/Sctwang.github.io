@@ -18,11 +18,11 @@
 
 那只好做 session 的复制了， 把 session id 在两个机器之间搬来搬去， 快累死了。
 
-![img](https://mmbiz.qpic.cn/mmbiz_png/iaIdQfEric9TxOoDdMlvo5ZiaN3U4adkCfZWUK6tjXMosLGkLF4Ks1lSPjxZUYRr5rEfpWutx8AXan4icjNTm3CXqA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+
 
 后来有个叫 Memcached 的支了招：把 session id 集中存储到一个地方， 所有的机器都来访问这个地方的数据， 这样一来，就不用复制了， 但是增加了单点失败的可能性， 要是那个负责 session 的机器挂了， 所有人都得重新登录一遍， 估计得被人骂死。
 
-![img](https://mmbiz.qpic.cn/mmbiz_png/iaIdQfEric9TxOoDdMlvo5ZiaN3U4adkCfZO03oJXOo2NHL5MKeyiclicaicvY0UmsqFARiaS73e1XVibvMAyk8C7ztfXw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+
 
 也尝试把这个单点的机器也搞出集群，增加可靠性， 但不管如何， 这小小的 session 对我来说是一个沉重的负担
 
@@ -38,11 +38,11 @@
 
 那就对数据做一个签名吧， 比如说我用 HMAC-SHA256 算法，加上一个只有我才知道的密钥， 对数据做一个签名， 把这个签名和数据一起作为 token ， 由于密钥别人不知道， 就无法伪造 token 了。
 
-![null](https://mmbiz.qpic.cn/mmbiz_png/iaIdQfEric9TxOoDdMlvo5ZiaN3U4adkCfZ1AGg8wzzdq6GrrYSloPpK6gXwR2S1ib2aficg9IWcQVyAfS4vmNY4Zew/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+
 
 这个 token 我不保存， 当小 F 把这个 token 给我发过来的时候，我再用同样的 HMAC-SHA256 算法和同样的密钥，对数据再计算一次签名， 和 token 中的签名做个比较， 如果相同， 我就知道小 F 已经登录过了，并且可以直接取到小 F 的 user id , 如果不相同， 数据部分肯定被人篡改过， 我就告诉发送者：对不起，没有认证。
 
-![img](https://mmbiz.qpic.cn/mmbiz_png/iaIdQfEric9TxOoDdMlvo5ZiaN3U4adkCfZrIwXtRWdhuWQMtgVFusZmW7P6vobEJmDUqc6JMQuQo9ibHrZMwjicHlw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+
 
 Token 中的数据是明文保存的（虽然我会用 Base64 做下编码， 但那不是加密）， 还是可以被别人看到的， 所以我不能在其中保存像密码这样的敏感信息。
 
@@ -68,9 +68,7 @@ session 也是类似的道理，服务器要知道当前发请求给自己的是
 
 在基于 Session 的身份验证中，服务器将在用户登录后为用户创建一个 Session。然后，Session ID 会被存储在用户浏览器的 Cookie 中。当用户保持登录状态时，Cookie 将与每个后续请求一起被发送出去。然后，服务器可以将存储在 Cookie 上的 Session ID 与存储在内存中或者数据库中的 Session 信息进行比较，以验证用户的身份，返回给用户客户端响应信息的时候会附带用户当前的状态。
 
-对照下面的示意图应该更容易理解。
 
-![img](https://mmbiz.qpic.cn/mmbiz_png/iaIdQfEric9TxOoDdMlvo5ZiaN3U4adkCfZkwP4gEK240ic0sSe3BJKh0hJ8XVZlsgpYNicASwzwwOjpJGo0rlvAxUg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
 ## Token
 
@@ -118,7 +116,7 @@ session 也是类似的道理，服务器要知道当前发请求给自己的是
 
 实现思路：
 
-![img](https://mmbiz.qpic.cn/mmbiz_png/iaIdQfEric9TxOoDdMlvo5ZiaN3U4adkCfZ8yzHHOHuccrNXbVdFBYf9iaWgV3e6qCcucrMGb6mYCoUAaPAvF8tG7w/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+
 
 • 用户登录校验，校验成功后就返回 Token 给客户端。• 客户端收到数据后保存在客户端• 客户端每次访问 API 是携带 Token 到服务器端。• 服务器端采用 filter 过滤器校验。校验成功则返回请求数据，校验失败则返回错误码
 
