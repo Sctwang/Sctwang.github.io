@@ -2,6 +2,8 @@
 
 - [平台文档链接](http://hzerodoc.saas.hand-china.com/zh/docs/service/register/)
 
+- [oauth 服链接](http://hzerodoc.saas.hand-china.com/zh/docs/service/oauth/oauth/)
+
 - 注册中心：
   - 服务注册发现
   - 服务健康检查
@@ -86,6 +88,7 @@
 
     - 服务注册：注册服务、接口，配置服务级别的认证信息；以及配置接口的运维信息、文档、测试用例等管理信息
     - 接口能力汇总：汇总展示平台通用接口能力以及本租户内的接口能力，并标识自己所拥有的接口能力；无权限的接口能力可通过接口文档查看接口信息；有权限的接口能力可配置不同维度的认证信息
+  
 - 接口授权
     - 角色授权：将接口能力授权给角色
   - 客户端授权：将角色授权给客户端
@@ -172,6 +175,16 @@
   - 根据发票图片识别，并完成发票查验
 
 - 前端服务：[平台文档对应链接](http://hzerodoc.saas.hand-china.com/zh/docs/service/front/)
+
+---
+
+- Web 端授权 OAuth 标准登录授权流程
+<div align=center><img src="https://mortre-picgo.oss-cn-beijing.aliyuncs.com/OAuth 标准登录授权流程.png"/></div>
+---
+<div align=center><img src="https://mortre-picgo.oss-cn-beijing.aliyuncs.com/Hzero服务调用链路.jpg"/></div>
+
+
+---
 
 
 
