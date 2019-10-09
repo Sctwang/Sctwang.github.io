@@ -1,69 +1,3 @@
-## 0922
-
-### application.yml 和 bootstrap.yml
-
-#### 加载顺序
-
-- bootstrap.yml（bootstrap.properties）用来程序引导时执行，应用于更加早期配置信息读取，如可以使用来配置 application.yml 中使用到参数等
-
-- application.yml（application.properties) 应用程序特有配置信息，可以用来配置后续各个模块中需使用的公共参数等。
-
-- bootstrap.yml 先于 application.yml 加载
-
-
-
-#### 配置区别
-
-bootstrap.yml 和 application.yml 都可以用来配置参数。
-
-- bootstrap.yml 可以理解成系统级别的一些参数配置，这些参数一般是不会变动的。
-
-- application.yml 可以用来定义应用级别的，如果搭配 spring-cloud-config 使用 application.yml 里面定义的文件可以实现动态替换。
-
-使用 Spring Cloud Config Server 时，应在 bootstrap.yml 中指定：
-
-1、spring.application.name
-
-2、spring.cloud.config.server.git.uri
-
-3、一些加密 / 解密信息
-
-
-
-#### 参考文章
-
-- [官方文档](https://cloud.spring.io/spring-cloud-static/spring-cloud.html)
-
-- [链接](https://www.cnblogs.com/EasonJim/p/7589546.html)
-- [链接](https://www.cnblogs.com/BlogNetSpace/p/8469033.html)
-- [链接](https://blog.csdn.net/jeikerxiao/article/details/78914132)
-
-
-
-### 注解
-
-#### @Permission 注解使用 
-
-- ```java
-  公开接口不需要登录：
-  @Permission(permissionPublic = true)
-  ```
-
-- ~~~java
-  接口需要登录访问
-  @Permission(permissionLogin = true)
-  ~~~
-
-- ```java
-  内部接口，不允许通过路由访问
-  @Permission(permissionWithin = true)
-  ```
-  
-
-
-
-
-
 #### @PathVariable 和 @RequestParam 的区别
 
 `@PathVariable`  获取的是请求路径中参数的值；接收请求路径中占位符的值
@@ -93,7 +27,8 @@ public class TestController {
 
 浏览器页面报错：
 
-<div align=center><img src="https://mortrepicgo.osscnbeijing.aliyuncs.com/20190922165722.png"/></div>
+<div align=center><img src="https://mortre-picgo.oss-cn-beijing.aliyuncs.com/20190922165722.png"/></div>
+
 控制台输出提示信息：`Resolved [org.springframework.web.bind.MissingPathVariableException: Missing URI template variable 'username' for method parameter of type String]`
 
 
@@ -141,7 +76,8 @@ public class TestController {
 
 浏览器页面报错：
 
-<div align=center><img src="https://mortrepicgo.osscnbeijing.aliyuncs.com/20190922165319.png"/></div>
+<div align=center><img src="https://mortre-picgo.oss-cn-beijing.aliyuncs.com/20190922165319.png"/></div>
+
 控制台输出提示信息：`Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'username' is not present]`
 
 
