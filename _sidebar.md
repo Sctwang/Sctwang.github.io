@@ -70,14 +70,4 @@
 ---
 
 - bms
-  - [NATAPP](bms/0916.md)
-  - [项目架构](bms/0918.md)
-  - [项目-问题记录](bms/0919.md)
-  - [项目-问题记录](bms/0920.md)
-  - [项目-注解使用](bms/0922.md)
-  - [项目-多数据源](bms/0924.md)
-  - [项目-SSO](bms/0925.md)
-  - [项目-登录流程](bms/0926.md)
-  - [Http状态码](bms/http状态码.md)
-  - [Hzero服务列表](bms/Hzero服务列表.md)
-  - [Token-Seeion-Cookie](bms/Token-Seeion-Cookie.md)
+  - [NATAPP](bms/20190916-内网穿透.md)
