@@ -5,10 +5,28 @@
 > 此处应注意还有另外一个注释 @PathVariable
 
 - @RequestParam
+
+
+
+~~~java
+    /**
+     * required=false表示不传的话，会给参数赋值为null，required=true就是必须要有
+     */
+    public Map<String, Object> xxx(@RequestParam(required = false, defaultValue = "") String funName) {
+        Map<String, Object> map = xxx.xxx(xxx);
+        return map;
+    }
+~~~
+
+
+
+
 - @RequestBody
   - 该注解用于读取 Request 请求的 body 部分数据，使用系统默认配置的 HttpMessageConverter 进行解析，然后把相应的数据绑定到要返回的对象上；
   - 再把 HttpMessageConverter 返回的对象数据绑定到 controller 中方法的参数上。
+  
 - @ReponseBody
+  
   - 该注解用于将 Controller 的方法返回的对象，通过适当的 HttpMessageConverter 转换为指定格式后，写入到 Response 对象的 body 数据区。
 
 参考：
