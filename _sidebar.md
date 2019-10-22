@@ -25,6 +25,7 @@
   - [LinkedHashMap](collections/LinkedHashMap.md)
 - Others
   - [Hash](java/hash.md)
+  - [Java动态追踪技术探究](java/Java动态追踪技术探究.md)
   - [Float / Double](others/float_double.md)
   - [Docker](others/docker.md)
   - [JConsole](others/jconsole.md)
