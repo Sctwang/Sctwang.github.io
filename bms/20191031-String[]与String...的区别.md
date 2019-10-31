@@ -66,3 +66,4 @@ myMethod( new String[]{ "a", "b", "c" } );
 
 - [Stackoverflow](https://stackoverflow.com/questions/11973505/what-is-the-difference-between-string-and-string-in-java)
 - [API 文档](https://docs.oracle.com/javase/1.5.0/docs/guide/language/varargs.html)
+
