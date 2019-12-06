@@ -1,6 +1,6 @@
 - Awesome
   - [Architect - awesome](others/architect-awesome.md)
-  - [劳动法](http://www.gov.cn/banshi/2005-05/25/content_905.htm)
+  - [劳动法](http://www.npc.gov.cn/npc/c30834/201901/ffad2d4ae4da4585a041abf66e74753c.shtml)
 - Interview
   - [gzc426](https://github.com/gzc426/Java-Interview)
     - [Java后台](interview/Java后台)
