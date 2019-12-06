@@ -1,10 +1,10 @@
 - Awesome
   - [Architect - awesome](others/architect-awesome.md)
 - 法律法规
-  - [中华人民共和国人力资源和社会保障部](http://www.mohrss.gov.cn)
-  - [中华人民共和国劳动法](http://www.mohrss.gov.cn/SYrlzyhshbzb/zcfg/flfg/fl/201601/t20160119_232110.html)
-  - [中华人民共和国劳动合同法](http://www.mohrss.gov.cn/SYrlzyhshbzb/zcfg/flfg/fl/201605/t20160509_239643.html)
-  - [中华人民共和国劳动争议调解仲裁法](http://www.mohrss.gov.cn/SYrlzyhshbzb/zcfg/flfg/fl/201601/t20160119_232061.html)
+  - [劳动法](http://www.mohrss.gov.cn/SYrlzyhshbzb/zcfg/flfg/fl/201601/t20160119_232110.html)
+  - [劳动合同法](http://www.mohrss.gov.cn/SYrlzyhshbzb/zcfg/flfg/fl/201605/t20160509_239643.html)
+  - [劳动争议调解仲裁法](http://www.mohrss.gov.cn/SYrlzyhshbzb/zcfg/flfg/fl/201601/t20160119_232061.html)
+  - [人力资源和社会保障部](http://www.mohrss.gov.cn)
 - Interview
   - [gzc426](https://github.com/gzc426/Java-Interview)
     - [Java后台](interview/Java后台)
