@@ -1,7 +1,7 @@
 - Awesome
   - [Architect - awesome](others/architect-awesome.md)
-  
-  @import "https://github.com/Sctwang/docsify/blob/master/others/Java-huashan.pdf"
+
+  [@import](https://github.com/import) "others/Java-huashan.pdf"
   
   - [Java 规范](others/Java-huashan.pdf)
 - 法律法规
