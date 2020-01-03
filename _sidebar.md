@@ -1,6 +1,7 @@
 - Awesome
   - [Architect - awesome](others/architect-awesome.md)
-- [Java 规范](others/Java-huashan.pdf)
+  - [Java 规范](others/Java-huashan.pdf)
+  - [Spring Boot 文档](https://docs.spring.io/spring-boot/docs/2.2.2.RELEASE/reference/htmlsingle/)
 - 法律法规
   - [劳动法](http://www.mohrss.gov.cn/SYrlzyhshbzb/zcfg/flfg/fl/201601/t20160119_232110.html)
   - [劳动合同法](http://www.mohrss.gov.cn/SYrlzyhshbzb/zcfg/flfg/fl/201605/t20160509_239643.html)
