@@ -49,6 +49,7 @@
   - [KSum](code/KSum.md)
   - [V2EX-射击游戏水贴](https://www.v2ex.com/t/599785)
   - [接码平台](others/jiema.md)
+  - [身份证编码规则](others/IDCardNumber.md)
   
 - Sql
   
