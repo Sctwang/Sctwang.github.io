@@ -4,11 +4,11 @@
   - [Spring Boot 文档](https://docs.spring.io/spring-boot/docs/2.2.2.RELEASE/reference/htmlsingle/)
 - Interview
   - [gzc426](https://github.com/gzc426/Java-Interview)
-    - [Java后台](interview/Java后台)
-    - [Java基础](interview/Java基础知识点和答案.md)
-    - [剑指Offer](interview/Java剑指offer.md)
-    - [Java资源](interview/Java资源.md)
-    - [MySQL优化](interview/MySQL优化看这一篇就够了.md)
+  - [Java后台](interview/Java后台)
+  - [Java基础](interview/Java基础知识点和答案.md)
+  - [剑指Offer](interview/Java剑指offer.md)
+  - [Java资源](interview/Java资源.md)
+  - [MySQL优化](interview/MySQL优化看这一篇就够了.md)
   
 - Algorithm
   - [GCD](others/gcd.md)
@@ -80,8 +80,6 @@
   - [day21 - React](daily/day21.md)
   - [day23 - 元注解](daily/20190902.md)
   - [day24 - 自定义注解](daily/day24.md)
-
----
 
 - bms
   - [NATAPP](bms/20190916-内网穿透.md)
