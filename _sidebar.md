@@ -2,12 +2,6 @@
   - [Architect - awesome](others/architect-awesome.md)
   - [Java 规范](others/Java-huashan.pdf)
   - [Spring Boot 文档](https://docs.spring.io/spring-boot/docs/2.2.2.RELEASE/reference/htmlsingle/)
-- 法律法规
-  - [劳动法](http://www.mohrss.gov.cn/SYrlzyhshbzb/zcfg/flfg/fl/201601/t20160119_232110.html)
-  - [劳动合同法](http://www.mohrss.gov.cn/SYrlzyhshbzb/zcfg/flfg/fl/201605/t20160509_239643.html)
-  - [劳动争议调解仲裁法](http://www.mohrss.gov.cn/SYrlzyhshbzb/zcfg/flfg/fl/201601/t20160119_232061.html)
-  - [人力资源和社会保障部](http://www.mohrss.gov.cn)
-  
 - Interview
   - [gzc426](https://github.com/gzc426/Java-Interview)
     - [Java后台](interview/Java后台)
@@ -94,3 +88,9 @@
   - [k8s](bms/20191025-项目记录-k8s.md)
   - [持续交付](bms/20191101-项目记录-持续交付.md)
   - [配置权限](bms/20190922-项目记录-加载顺序和配置权限.md)
+
+- 法律法规
+  - [劳动法](http://www.mohrss.gov.cn/SYrlzyhshbzb/zcfg/flfg/fl/201601/t20160119_232110.html)
+  - [劳动合同法](http://www.mohrss.gov.cn/SYrlzyhshbzb/zcfg/flfg/fl/201605/t20160509_239643.html)
+  - [劳动争议调解仲裁法](http://www.mohrss.gov.cn/SYrlzyhshbzb/zcfg/flfg/fl/201601/t20160119_232061.html)
+  - [人力资源和社会保障部](http://www.mohrss.gov.cn)
