@@ -3,4 +3,3 @@
 [GitHub](https://github.com/Sctwang/docsify)
 [Get Started](#introduction)
 [Blog](https://sctwang.github.io/)
-
